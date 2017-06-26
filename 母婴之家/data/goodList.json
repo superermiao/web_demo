@@ -1,0 +1,86 @@
+{
+	"g0":{
+		"id":"0",
+		"img":"../img/goodList/goods/1.jpg",
+		"name":"威尔贝鲁wellber 15厚棉彩棉新生儿带帽睡袋哒可鸭",
+		"span":"棉品专享价",
+		"price":"168.00"
+	},
+	"g1":{
+		"id":"1",
+		"img":"../img/goodList/goods/2.jpg",
+		"name":"威尔贝鲁wellber 15薄棉天然彩棉包巾",
+		"span":"棉品专享价",
+		"price":"118.00"
+	},
+	"g2":{
+		"id":"2",
+		"img":"../img/goodList/goods/3.jpg",
+		"name":"迪士尼宝宝15小画家加厚款夹棉脱袖睡袋粉色",
+		"span":"棉品专享价",
+		"price":"139.00"
+	},
+	"g3":{
+		"id":"3",
+		"img":"../img/goodList/goods/4.jpg",
+		"name":"威尔贝鲁wellber16C彩棉空气层长耳朵兔女宝宝分腿睡袋",
+		"span":"棉品专享价",
+		"price":"110.00"
+	},
+	"g4":{
+		"id":"4",
+		"img":"../img/goodList/goods/5.jpg",
+		"name":"迪士尼宝宝15小画家舒棉绒分腿睡袋蓝色",
+		"span":"棉品专享价",
+		"price":"159.00"
+	},
+	"g5":{
+		"id":"5",
+		"img":"../img/goodList/goods/6.jpg",
+		"name":"贝惠谊16C竹纤维提花纱布双面隔尿垫蘑菇50*70cm",
+		"span":"3件9折/5件8折",
+		"price":"37.00"
+	},
+	"g6":{
+		"id":"6",
+		"img":"../img/goodList/goods/7.jpg",
+		"name":"贝惠谊 蓝色小狮子婴儿抱被",
+		"span":"3件9折/5件8折",
+		"price":"39.00"
+	},
+	"g7":{
+		"id":"7",
+		"img":"../img/goodList/goods/8.jpg",
+		"name":"贝惠谊14Q动物乐园珊瑚绒连帽浴披风 小狮子",
+		"span":"3件9折/5件8折",
+		"price":"39.00"
+	},
+	"g8":{
+		"id":"8",
+		"img":"../img/goodList/goods/9.jpg",
+		"name":"威尔贝鲁wellber 15微厚棉彩棉前厚后薄睡袋彩棉色",
+		"span":"棉品专享价",
+		"price":"159.00"
+	},
+	"g9":{
+		"id":"9",
+		"img":"../img/goodList/goods/10.jpg",
+		"name":"威尔贝鲁16Q威尔贝鲁彩棉空气层隔尿垫小熊款30*50cm",
+		"span":"威尔贝鲁专享价",
+		"price":"23.00"
+	},
+	"g10":{
+		"id":"10",
+		"img":"../img/goodList/goods/11.jpg",
+		"name":"迪士尼宝宝16Q亲爱的法兰绒夹棉睡袋柳橙色",
+		"span":"迪斯尼专享价",
+		"price":"118.00"
+	},
+	"g11":{
+		"id":"11",
+		"img":"../img/goodList/goods/12.jpg",
+		"name":"良良16格彩麻棉隔尿垫(标准) 粉色65*50cm",
+		"span":"棉品专享价",
+		"price":"64.00"
+	}
+}

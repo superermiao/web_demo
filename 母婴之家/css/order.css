@@ -1,0 +1,797 @@
+.order-outer {
+    background: #ececec;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+h1 {
+    font-size: 16px;
+}
+h2, h3, h4 {
+    font-size: 14px;
+}
+/*---------------------logo部分---------------------*/
+.logo-step {
+    _height: 80px;
+    width: 1000px;
+    margin: 10px auto;
+    _overflow: hidden;
+}
+.logo {
+    _display: inline;
+    float: left;
+}
+.step {
+    _display: inline;
+    float: right;
+    background: url(../img/order/cart-step2.png) no-repeat;
+    width: 612px;
+    height: 36px;
+    margin-top: 22px;
+}
+.logo img {
+    float: left;
+    width: 150px;
+    height: 55px;
+    margin-top: 15px;
+}
+.loading {
+    background: url(../img/order/loading.gif) no-repeat center center;
+}
+.fr {
+    float: right;
+    _display: inline;
+}
+.inblock {
+    display: inline-block;
+    vertical-align: middle;
+}
+/*---------------------订单内容部分------------------*/
+.checkout {
+    overflow: hidden;
+    zoom: 1;
+    margin: 0 auto;
+    width: 1000px;
+    padding-top: 10px;
+}
+/*-----收货信息-----*/
+
+.write-info {
+    padding: 10px 0 20px;
+    /* border-top: 1px dashed #eee; */
+}
+.error {
+    height: 26px;
+    padding-left: 6px;
+    float: left;
+    color: #c00;
+    line-height: 26px;
+    font-family: SimSun;
+}
+.textbox {
+    width: 138px;
+    height: 16px;
+    border: 1px solid #ccc;
+    padding: 4px 3px;
+    font-family: Arial,"\5b8b\4f53",sans-serif;
+}
+.field, .group {
+    zoom: 1;
+}
+.field {
+    overflow: hidden;
+    position: relative;
+}
+.checkout-step-1, .checkout-step-2, .checkout-step-3, .checkout-step-4, .checkout-step-5 {
+    border: 1px solid #d3d3d3;
+    width: 998px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 5px 9px 42px #e4e4e4;
+}
+.address-list, #consignee_radio_new, #write-info, #addNumLimitNote {
+    display: none;
+}
+#addNumLimitNote {
+    height: 35px;
+    line-height: 35px;
+}
+.address-list .select-expand span, #part-invoice .invoice-more .select-expand span {
+    padding-left: 10px;
+}
+#loadAllAddress {
+    font-family: SimSun;
+}
+#select-more span, #select-more s, #invoice-more-btn span, #invoice-more-btn s {
+    float: left;
+    cursor: pointer;
+}
+#select-more span {
+    margin-right: 5px;
+    color: #666;
+    line-height: 16px;
+}
+#select-more span, #invoice-more-btn span {
+    color: #666666;
+    line-height: 16px;
+    margin-right: 5px;
+}
+#consignee .address-list .select-expand span, #part-invoice .invoice-more .select-expand span {
+    padding-left: 10px;
+}
+.address-list, .invoice-more {
+    height: 18px;
+    margin-bottom: 1px;
+    overflow: hidden;
+}
+.sbox-wrap .address-list, .sbox-wrap .item {
+    padding: 0 10px;
+}
+.item {
+    height: 35px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    overflow: hidden;
+    zoom: 1;
+    line-height: 35px;
+    width: 95%;
+}
+.item-selected {
+    border-bottom: 1px dashed #eee;
+    /* width: 95%; */
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+.sbox-wrap .address-list, .sbox-wrap .item {
+    padding: 0 10px;
+}
+#consignee-list .item {
+    border-bottom: 1px dashed #eee;
+    padding: 1px;
+    padding-bottom: 0;
+}
+.label {
+    width: 85px;
+    height: 26px;
+    margin-right: 5px;
+    float: left;
+    color: #666;
+    line-height: 26px;
+    text-align: right;
+}
+.consignee_radio_new {
+    color: #06c !important;
+    cursor: pointer;
+    padding-left: 13px;
+}
+.form label, .form input, .form select, .form textarea, .form button, .form .label {
+    float: left;
+    font-size: 12px;
+    outline: none;
+    font-family: SimSun;
+    color: #555;
+}
+.checkout .step-title {
+    height: 44px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 44px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.step-title h2 {
+    font-weight: 700;
+}
+.sbox {
+    width: 998px;
+    overflow: hidden;
+}
+#consignee-list {
+    margin-top: 8px;
+}
+.btn-submit span, .btn-cancel span {
+    height: 30px;
+    padding-right: 20px;
+    float: left;
+    cursor: pointer;
+    background: url(../img/order/btn-ff.png) no-repeat 100% -30px;
+}
+.address-list .inner {
+    width: 900px;
+    height: 17px;
+    _border-top: 1px solid #ccc;
+    text-align: center;
+    border-top: 1px solid #fff;
+    -webkit-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+}
+#select-more, #invoice-more-btn {
+    width: 100px;
+    height: 16px;
+    margin: -1px auto 0;
+    border: 1px solid #ccc;
+    border-top-color: #fff;
+    position: relative;
+    text-align: left;
+    cursor: pointer;
+    background: url(../img/order/more-bg-1.gif) repeat-x;
+}
+#consignee .address-list .select-expand span {
+    padding-left: 13px;
+}
+#select-more s, #invoice-more-btn s {
+    width: 5px;
+    height: 7px;
+    margin-top: 4px;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0;
+    background: url(../img/order/btn-ff.png) no-repeat 0 -216px;
+}
+.item label {
+    cursor: pointer;
+}
+.consignee-form {
+    padding-left: 12px;
+}
+.form-btn {
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 101px;
+}
+.list {
+    padding: 5px 0;
+    overflow: hidden;
+    zoom: 1;
+}
+.list .field {
+    height: 26px;
+    float: left;
+    line-height: 26px;
+}
+.label em {
+    margin-right: 5px;
+    color: #f60;
+    font-family: sans-serif;
+}
+.form .form-tip {
+    padding-left: 10px;
+    float: left;
+    color: #666;
+    line-height: 26px;
+}
+.selected-address {
+    float: left;
+    margin-right: 5px;
+}
+.full-address .textbox {
+    width: 308px;
+}
+#consignee_phone_left {
+    width: 44px;
+}
+.field s {
+    float: left;
+    margin: 0 5px;
+    font-style: normal;
+    color: #ccc;
+    text-decoration: none;
+}
+#consignee_phone_middle {
+    width: 144px;
+}
+#consignee_phone_right {
+    width: 54px;
+}
+.btn-submit, .btn-cancel {
+    height: 30px;
+    margin-right: 10px;
+    padding-left: 20px;
+    float: left;
+    line-height: 30px;
+    background: url(../img/order/btn-ff.png) no-repeat;
+}
+a.btn-submit, a.btn-submit:hover {
+    color: #fff;
+    text-decoration: none;
+}
+a.btn-cancel, .btn-cancel span {
+    background-image: none;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    color: #666;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 3px;
+}
+.loading-1, .checkout-state {
+    height: 28px;
+    border: 1px solid #edd28b;
+    padding: 0 10px;
+    float: left;
+    line-height: 28px;
+}
+
+.btn-cancel span {
+    border: none;
+}
+.loading b, .checkout-state b {
+    width: 28px;
+    height: 28px;
+    float: left;
+    background: url(../img/order/loading.gif) no-repeat center center;
+}
+#s_province,#s_city,#s_county{
+    height: 22px;
+    margin: 2px 5px 0 0;
+}
+.item .hookbox, .item .hookbox {
+    margin: 11px 5px 0 8px;
+    cursor: pointer;
+    float: left;
+}
+.item-action {
+    padding-left: 20px;
+    color: #999;
+    float: right;
+    font-family: SimSun;
+}
+.item label b {
+    font-weight: normal;
+}
+.item-action a {
+    margin: 0 5px;
+    color: #06c;
+}
+/*---------------------支付方式---------------------*/
+.payment-tip {
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.step-right {
+    padding-right: 24px;
+    height: 24px;
+    line-height: 20px;
+    padding: 10px 10px 0 0;
+    position: relative;
+    top: 2px;
+    left: 12px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#step-content-pay-sure, #save-payAndShip-tip {
+    display: none;
+}
+.save-consignee-payship {
+    background-color: #fffdee;
+    border: 1px solid #edd28b;
+    padding: 0 1px 0 3px;
+}
+.step-right span {
+    color: #ff8500;
+    float: left;
+    margin-right: 5px;
+}
+.mc {
+    overflow: visible;
+    zoom: 1;
+}
+.payment .item {
+    border-bottom: 1px dashed #eee;
+    padding: 1px;
+    padding-bottom: 0;
+}
+.payment .label {
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+}
+.clr {
+    padding: 0;
+    margin: 0;
+    clear: both;
+}
+/*-----------送货清单-------------*/
+.step-title .fr {
+    margin-right: 12px;
+    line-height: 44px;
+    color: #06c;
+}
+.part-order-dl {
+    border-bottom: 1px solid #ccc;
+}
+.part-order-dt {
+    /* border-top: 1px solid #ccc; */
+    border-bottom: 1px solid #ccc;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 20px;
+    background-color: #ececec;
+    position: relative;
+    margin-left: -1px;
+    width: 98.5%;
+    z-index: 10;
+}
+.part-order-dd {
+    zoom: 1;
+}
+.part-order-dt .fl {
+    height: 48px;
+}
+.order-type-shang {
+    background-color: #ff5c00;
+}
+.order-type-shang, .order-type-te, .order-type-hai {
+    padding: 5px 6px;
+    color: #fff;
+    border-radius: 3px;
+}
+.order-num {
+    padding: 2px;
+    font-size: 18px;
+    font-family: 'Century Gothic';
+}
+.part-order-dt .order-num {
+    font-size: 12px;
+}
+.part-order-dt em {
+    margin: 0 10px;
+}
+.order-time {
+    padding-left: 30px;
+    zoom: 1;
+    overflow: hidden;
+    width: 300px;
+    display: none;
+    margin-left: 30px;
+    border-left: 1px dashed #bbb;
+}
+.order-time .dl {
+    border: 2px solid #ff5c00;
+    background-color: #fff;
+    display: inline-block;
+    top: 12px;
+    left: 128px;
+    position: absolute;
+    width: 210px;
+    cursor: pointer;
+}
+.order-time .dt {
+    height: 28px;
+    line-height: 28px;
+    background: url(../img/order/date.png) 185px center no-repeat;
+    position: relative;
+    padding-left: 20px;
+}
+.order-time .dd {
+    position: relative;
+    width: 210px;
+    margin-bottom: 5px;
+    display: none;
+}
+.order-time .dd .item {
+    padding: 0;
+    height: 28px;
+    line-height: 28px;
+    border-bottom: 1px dashed #eee;
+    margin-bottom: 0;
+}
+.order-time .dd .item {
+    border-bottom: 1px dashed #eee;
+    padding: 1px;
+    padding-bottom: 0;
+}
+.order-time .dd .item-selected {
+    margin-bottom: 0;
+}
+.order-time .dd .item {
+    border-bottom: 1px dashed #eee;
+    padding: 1px;
+    padding-bottom: 0;
+}
+.order-time .dd .item .deliver-date {
+    margin: 9px 5px 0 8px;
+    cursor: pointer;
+    float: left;
+}
+.order-review-thead {
+    height: 44px;
+    line-height: 44px;
+    color: #666;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #f9f9f9;
+    border-left: 3px solid #ff5c00;
+    margin-left: -1px;
+    overflow: hidden;
+    width: 996px;
+}
+.order-review-tfoot {
+    /* height: 42px; */
+    line-height: 42px;
+    position: relative;
+    font-family: simsun;
+    color: #555;
+    zoom: 1;
+}
+.fore-name, .fore-price, .fore-num, .fore-cal {
+    float: left;
+    display: block;
+    width: 535px;
+}
+.fore-name {
+    padding-left: 30px;
+}
+.fore-price {
+    width: 150px;
+}
+.fore-num {
+    width: 150px;
+}
+.fore-cal {
+    width: 120px;
+}
+.order-review-list {
+    border-bottom: 1px solid #dfdfdf;
+    padding: 8px 0 8px 30px;
+    box-shadow: 0px 3px 6px #eee;
+}
+.order-review-list li {
+    position: relative;
+    margin-right: 8px;
+    _zoom: 1;
+    margin-bottom: 8px;
+}
+.pic {
+    background-color: #fff;
+    width: 60px;
+    position: relative;
+    height: 60px;
+    text-align: center;
+    border: 1px #e5e5e5 solid;
+    border-radius: 2px;
+    padding: 6px;
+    background: #fff;
+}
+.pic img {
+    width: 60px;
+    height: 60px;
+}
+.tit {
+    padding-left: 9px;
+    width: 440px;
+    padding-right: 12px;
+    position: relative;
+}
+.tit a {
+    font-size: 12px;
+    color: #555;
+    overflow: hidden;
+    line-height: 18px;
+    white-space: normal;
+}
+.price {
+    width: 140px;
+    text-align: center;
+}
+ins {
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+    line-height: 18px;
+    text-decoration: none;
+    font-family: arial;
+}
+.num {
+    width: 140px;
+    text-align: center;
+}
+.count {
+    width: 110px;
+    text-align: center;
+    font-family: Tahoma;
+    line-height: 1.2;
+}
+.count strong {
+    font-weight: bold;
+    color: #333;
+}
+.order-review-tfoot-fr {
+    float: right;
+    position: relative;
+}
+.order-review-tfoot-list {
+    height: 24px;
+    line-height: 24px;
+    overflow: inherit;
+    zoom: 1;
+    position: relative;
+    padding: 2px 0;
+}
+.pro-pay-totle, .pro-pay-deliver, .pro-pay-cheap, .pro-totle {
+    width: 150px;
+    margin-right: 20px;
+    float: left;
+    text-align: right;
+    font-family: SimSun;
+    display: block;
+}
+.order-review-tfoot-list strong {
+    font-family: tahoma;
+    /* font-weight: bold; */
+    color: #666;
+    float: left;
+    width: 100px;
+    text-align: right;
+    display: block;
+    margin-right: 20px;
+}
+.order-review-tfoot-fl-dt, .order-review-tfoot-fl-dd {
+    padding-left: 20px;
+    line-height: 30px;
+}
+/*----------------------------第五步：订单结算部分-----------------------------------*/
+.order-summary {
+    zoom: 1;
+    position: relative;
+}
+.statistic {
+    float: right;
+    width: 318px;
+    border-left: 1px dotted #ccc;
+    margin-left: -1px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.order-coupon {
+    float: left;
+    width: 679px;
+    zoom: 1;
+    overflow: hidden;
+    padding-top: 10px;
+    height: 238px;
+}
+#VerificationCode {
+    display: none;
+    margin-bottom: 10px;
+}
+.order-coupon .item {
+    height: auto;
+}
+.toggle-title {
+    height: 30px;
+    overflow: hidden;
+    zoom: 1;
+}
+.toggle-giftCard-wrap {
+    background-color: #f0e7d6;
+    border: 1px solid #ccc;
+    padding: 17px;
+    display: none;
+}
+#giftCardCon {
+    float: left;
+    margin-left: 40px;
+    height: 15px;
+    margin-top: 7px;
+    line-height: 15px;
+    color: #666;
+    display: none;
+}
+.toggler b {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    float: left;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0;
+    background: url(../img/order/btn-ff.png) no-repeat 0 -155px;
+}
+.giftCardbox {
+    width: 611px;
+    background-color: #fff;
+    height: 179px;
+}
+.statistic-list {
+    border-bottom: 1px dotted #ccc;
+}
+.statistic .list {
+    height: 24px;
+    line-height: 24px;
+    overflow: inherit;
+    zoom: 1;
+    position: relative;
+}
+.submit-check {
+    position: relative;
+    zoom: 1;
+    margin: 10px 0;
+}
+.checkout-submit {
+    outline: none;
+    margin-right: 18px;
+    border: 0;
+    float: right;
+    cursor: pointer;
+    width: 255px;
+    height: 36px;
+    background: url(../img/order/btn-ff.png) no-repeat 0 -230px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+.submit-check-info {
+    color: #EF6400;
+    line-height: 20px;
+    bottom: 52px;
+    position: absolute;
+    right: 18px;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.statistic span {
+    width: 180px;
+    margin-right: 20px;
+    float: left;
+    text-align: right;
+    font-family: SimSun;
+}
+.statistic em {
+    color: #666;
+    font-style: normal;
+}
+.statistic .price {
+    float: left;
+    width: 100px;
+    text-align: right;
+}
+.statistic .price strong {
+    font-weight: bold;
+    font-size: 18px;
+    color: #e60012;
+}
+#checkout-step-5 .loading-2 {
+    background: url('../img/order/loading.gif') no-repeat 60px center;
+    line-height: 42px;
+    padding: 5px 0 5px 35px;
+    color: #666;
+}
+.arrconf {
+    background: url(../img/order/arrconf.png) no-repeat bottom center #fff;
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    font-size: 0;
+    overflow: hidden;
+    zoom: 1;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+}
+.submit-check-info span {
+    width: auto;
+    margin: 15px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

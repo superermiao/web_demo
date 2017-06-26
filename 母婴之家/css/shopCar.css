@@ -1,0 +1,551 @@
+h1 {
+    font-size: 16px;
+}
+img {
+    border: 0 none;
+    vertical-align: top;
+}
+a {
+    color: #666;
+    font-size: 12px;
+    line-height: 1.2;
+    font-family: "\5B8B\4F53",arial,tahoma;
+}
+.cart-outer {
+    background: #ececec;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+.cart-outer a {
+    cursor: pointer;
+}
+.clear {
+    padding: 0;
+    margin: 0;
+    clear: both;
+}
+.fl {
+    float: left;
+    _display: inline;
+}
+.dist {
+    width: 598px;
+    text-align: right;
+}
+.checktext {
+    text-align: right;
+    width: 135px;
+}
+.totle_price {
+    width: 146px;
+    text-align: center;
+    color: #e60012;
+    font-weight: bold;
+}
+.yh {
+    width: 351px;
+    text-align: right;
+}
+.yhtot {
+    width: 142px;
+    text-align: center;
+    color: #e60012;
+    font-weight: bold;
+}
+.hide {
+    display: none;
+}
+.inblock {
+    display: inline-block;
+}
+/*----------------logo部分-------------------*/
+.logo-step {
+    _height: 80px;
+    width: 1000px;
+    margin: 10px auto;
+    _overflow: hidden;
+}
+.logo {
+    _display: inline;
+    float: left;
+}
+.step {
+    _display: inline;
+    float: right;
+    background: url('../img/shopCar/cart-step1.png') no-repeat;
+    width: 612px;
+    height: 36px;
+    margin-top: 22px;
+}
+.logo img {
+    float: left;
+    width: 155px;
+    margin-top: 10px;
+    height: 55px;
+}
+/*----------------商品列表部分---------------*/
+.cart-top {
+    width: 1000px;
+    margin: 0 auto;
+    background: #ececec;
+}
+.cart {
+    width: 1000px;
+    margin: 10px auto 0;
+    _margin: 0 auto;
+}
+.tit-n {
+    float: left;
+}
+.login {
+    float: right;
+}
+.tit-n h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    background: url('../img/shopCar/gouwuche.png') 0 5px no-repeat;
+    padding: 10px 43px;
+    text-shadow: 0 1px 0 #fff;
+}
+.login span {
+    float: left;
+    font-family:"Microsoft YaHei";
+    color: rgb(51, 51, 51);
+    margin: 20px 17px 0px 0px;
+}
+.login span a {
+    color: #ff5c00;
+}
+.cart3_area {
+    border: 1px solid #d3d3d3;
+    margin-bottom: 20px;
+    box-shadow: 5px 9px 42px #e4e4e4;
+}
+.coupon_area {
+    margin-top: 20px;
+    border: 1px solid #cecece;
+    border-bottom: none;
+    background-color: #fff;
+    box-shadow: 5px 9px 42px #e4e4e4;
+}
+.coupon_area input {
+    width: 230px;
+    height: 14px;
+    line-height: 14px;
+    border: 1px solid #c8c7cc;
+    border-right: 0;
+    text-align: left;
+    font-size: 14px;
+    outline: none;
+    font-weight: bold;
+    font-family: Tahoma;
+    margin-left: 55px;
+    padding: 11px 5px;
+    color: #A7A7A7;
+}
+.coupon_area .use {
+    width: 80px;
+    height: 38px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+    background: #ff5c00;
+    text-align: center;
+    line-height: 38px;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    outline: none;
+    margin-left: -5px;
+}
+.cart3_tit {
+    height: 44px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #F8F8F8;
+    position: relative;
+    margin-bottom: -1px;
+    _overflow: hidden;
+}
+.cart3_list {
+    font-size: 0;
+    border-top: 1px solid #dfdfdf;
+    padding: 8px 0 8px 40px;
+    background-color: #fff;
+}
+.cart_check {
+    border-top: 1px solid #e5e5e5;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f8f8f8;
+}
+.cart3_tit {
+    height: 44px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #F8F8F8;
+    position: relative;
+    margin-bottom: -1px;
+    _overflow: hidden;
+}
+.cart3_tit_l {
+    float: left;
+    height: 100%;
+    width: 500px;
+    white-space: nowrap;
+    position: relative;
+    z-index: 3;
+    padding-right: -400px;
+}
+.cart3_tit span {
+    float: left;
+    text-align: center;
+    line-height: 44px;
+    color: rgb(51, 51, 51);
+    font-family: "Microsoft YaHei";
+}
+.cart3_tit span.price {
+    width: 149px;
+}
+.cart3_tit span.num {
+    width: 102px;
+}
+.cart3_tit .span_width_90 {
+    width: 125px;
+}
+.cart3_tit .action {
+    width: 70px;
+}
+.cart3_checkbox {
+    visibility: hidden;
+    margin: 15px 0 0 16px;
+    _margin: 10px 0 0 16px;
+}
+.cart3 .inblock {
+    display: inline-block;
+    vertical-align: middle;
+}
+.cart3_tit .label {
+    float: left;
+    color: #333;
+    margin: 10px 0 0 0;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Microsoft YaHei';
+    text-shadow: 0 1px 0 #fff;
+}
+.cart3_tit .ct-t {
+    margin-left: 5px;
+    color: #777;
+    max-width: 388px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.cart3_list li {
+    position: relative;
+    margin: 8px 8px 8px 0;
+    _zoom: 1;
+}
+.cart3_list .pic {
+    background-color: #fff;
+    width: 60px;
+    position: relative;
+    height: 60px;
+    text-align: center;
+    border: 1px #e5e5e5 solid;
+    border-radius: 2px;
+    padding: 6px;
+    background: #fff;
+}
+.cart3_list .cart3_prod .pic img {
+    width: 60px;
+    height: 60px;
+}
+.cart3_list .tit {
+    padding-left: 9px;
+    width: 367px;
+    padding-right: 12px;
+}
+.cart3_list .tit a {
+    font-size: 12px;
+    color: #555;
+    overflow: hidden;
+    line-height: 18px;
+    white-space: normal;
+}
+.cart3_list .price {
+    width: 134px;
+    padding-left: 1px;
+    text-align: center;
+}
+.cart3_list .price ins {
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+    line-height: 18px;
+    text-decoration: none;
+    font-family: arial;
+}
+.cart3_list .price .del {
+    color: #ccc;
+    text-decoration: line-through;
+}
+/*数量的增加减少*/
+.cart3_list .num {
+    padding-left: 1px;
+    width: 112px;
+    font-size: 0;
+    text-align: center;
+}
+.cart3_list .num a {
+    width: 24px;
+    height: 24px;
+    color: #333;
+    position: relative;
+    outline: none;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+    border: 1px solid #c8c7cc;
+    text-align: center;
+    line-height: 24px;
+    font-family: Tahoma;
+    font-size: 15px;
+    outline: none;
+}
+.cart3_list .num input {
+    width: 34px;
+    height: 24px;
+    line-height: 14px;
+    border: 1px solid #c8c7cc;
+    line-height: 24px\9;
+    border-left: 0;
+    border-right: 0;
+    width: 34px;
+    text-align: center;
+    font-size: 14px;
+    outline: none;
+    font-weight: bold;
+    font-family: Tahoma;
+    margin: 0;
+    padding: 0;
+}
+.cart3_list .num a.add {
+    margin-left: -1px;
+}
+.cart3_list .num a span, .cart3_list .num a em {
+    width: 12px;
+    height: 2px;
+    background-color: #333;
+    display: block;
+    margin: 11px auto 0;
+    cursor: pointer;
+    overflow: hidden;
+    cursor: pointer;
+}
+.cart3_list .num a em {
+    position: relative;
+    height: 10px;
+    width: 2px;
+    margin: -6px auto 0;
+}
+/*合计*/
+.cart3_list .count, .cart3_list .weight {
+    width: 115px;
+    padding-left: 1px;
+    text-align: center;
+    color: #E60012;
+    font-family: Tahoma;
+    line-height: 1.2;
+}
+.cart3_list .count {
+    position: relative;
+}
+.cart3_list .count strong {
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    font-family: arial;
+}
+.cart3_list .action {
+    width: 92px;
+    text-align: center;
+}
+.cart3_list .line {
+    width: 2px;
+    height: 13px;
+    background-color: #e5e5e5;
+    position: absolute;
+    left: 37px;
+    bottom: -12px;
+}
+.dist .red {
+    padding: 0 5px;
+    color: #f00;
+}
+/*优惠码*/
+.coupon_box {
+    padding: 10px 0;
+    border-bottom: 1px solid #cecece;
+}
+
+/*----------------确认订单部分---------------*/
+.cart3_bott {
+    height: 55px;
+    position: relative;
+    background: #f2f2f2;
+    border: 1px solid #ddd;
+    border-top: none;
+    box-shadow: 5px 9px 42px #e4e4e4;
+}
+.tipsOrder {
+    position: absolute;
+    top: -130px;
+    right: -92px;
+    border: 2px solid #ff5c00;
+    border-radius: 3px;
+    padding: 15px 15px 40px 15px;
+    background: #fff;
+    z-index: 999999;
+}
+.ac {
+    float: left;
+    width: 140px;
+    margin: 20px 0 0 23px;
+}
+.a-m {
+    float: right;
+    width: 800px;
+}
+.tipsOrder .tipc {
+    line-height: 20px;
+    font-size: 14px;
+    color: #f00;
+    max-width: 290px;
+    height: 60px;
+    _width: 290px;
+    word-break: break-all;
+}
+.tipsOrder .arrD {
+    position: absolute;
+    background: url('../img/shopCrt/arrdown.png') no-repeat;
+    width: 30px;
+    height: 18px;
+    bottom: -18px;
+    left: 50%;
+    margin-left: -15px;
+}
+.tipsOrder .closeTip {
+    color: #333;
+    font-size: 12px;
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    margin-left: -13px;
+    cursor: pointer;
+}
+.select_all {
+    /* display: inline-block; */
+    vertical-align: middle;
+    display: none;
+}
+.ac .delete {
+    color: #057bd2;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+.select_all input {
+    margin-right: 5px;
+    vertical-align: -2px;
+}
+.a-m span {
+    float: right;
+}
+.a-m .submit_b {
+    height: 55px;
+    width: 145px;
+    line-height: 55px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    background: #ff5c00;
+    font-weight: bold;
+    font-family: 'Microsoft YaHei';
+}
+.a-m .submit_b_disabled {
+    height: 55px;
+    width: 145px;
+    line-height: 55px;
+    font-size: 20px;
+    text-align: center;
+    color: #E9E9E9;
+    display: none;
+    background: #B1ABAB;
+    font-weight: bold;
+    font-family: 'Microsoft YaHei';
+    cursor: default;
+}
+.a-m .totCash {
+    vertical-align: middle;
+    font-size: 28px;
+    color: #e60012;
+    margin: 0 15px;
+    line-height: 2;
+}
+.a-m .det {
+    line-height: 4;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.a-m .det strong {
+    color: #e60012;
+}
+/*-----------------空购物车-------------------*/
+.emptyCart {
+    width: 1000px;
+    margin: 0 auto;
+}
+.emptyCart dl {
+    overflow: hidden;
+}
+.emptyCart dt {
+    margin: 100px 58px 90px 285px;
+    _margin: 100px 58px 90px 150px;
+    float: left;
+}
+.emptyCart dd {
+    float: left;
+}
+.emptyCart dt i {
+    display: block;
+    width: 197px;
+    height: 199px;
+    background: url('../img/shopCar/emptyCart.png') no-repeat;
+}
+.emptyCart .emptyText {
+    margin-top: 146px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.emptyCart .btn {
+    margin-top: 20px;
+}
+.emptyCart .btn a {
+    display: block;
+    width: 120px;
+    height: 50px;
+    font-size: 23px;
+    color: #fff;
+    background: #ff598f;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Microsoft YaHei';
+    border-radius: 3px;
+}

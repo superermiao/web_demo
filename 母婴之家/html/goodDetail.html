@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<link rel="stylesheet" href="../css/header.css" />
+		<link rel="stylesheet" href="../css/nav.css">
+		<link rel="stylesheet" href="../css/footer.css" />
+		<link rel="stylesheet" href="../css/goodDetail.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+	</head>
+	<body>
+	<!-- 头部 -->
+		<div id="header"></div>
+		<span class="clear"></span>
+	<!-- nav -->
+		<div id="nav"></div>
+		<span class="clear"></span>
+	<!-- 主体 -->
+		<!-- 面包屑导航 -->
+		<div class="bodyCon topNav clearfix">
+			<a href="index.html">
+				<b>首页</b>
+			</a>
+			&gt;&nbsp;
+        	<a href="goodList.html">床椅寝具</a>
+        	&gt;&nbsp;
+        	<a href="goodList.html">寝具</a>
+        	&gt;&nbsp;
+			<a href="##" id="thisGoodName"></a>   
+		</div>
+		<!-- 展示 放大镜 -->
+		<div class="bodyCon mrbtm20 clearfix">
+			<div class="clearfix borderf1">
+				<!-- 图片放大镜 -->
+				<div class="conTopLeftBox">
+					<!-- 放大镜部分 -->
+					<div id="preview" class="preview">
+	                    <div class="jqzoom">
+	                        <img id="bigImg" src="../img/goodDetail/loading.gif">
+	                        <!-- 遮罩 -->
+	                        <div class="jqZoomPup" style="width: 205.625px; height: 196.875px; visibility: visible;display: none;">
+	                        	&nbsp;
+	                        </div>
+	                    </div>
+	                    <!-- 大图 -->
+	                    <div class="zoomdiv" style="top: -1px; left: 350px; width: 470px; height: 450px; display: none;">
+	                    	<img class="bigimg" src="../img/goodDetail/loading.gif" style="position: absolute;">
+	                    </div>
+
+	                    <div id="spec" class="spec">
+	                        <div class="arrowbox fl">
+	                            <div id="specLeft" class="control specLeftT"></div>
+	                        </div>
+	                        <div id="specList" class="specList">
+	                            <ul class="listImg">
+                                    <!-- <li class="chosed">
+                                        <img class="smallPicOne" src="../img/goodDetail/goods/1.jpg">
+                                    </li> -->
+	                            </ul>
+	                        </div>
+	                        <div class="arrowbox fr">
+	                            <div id="specRight" class="control specRightT"></div>
+	                        </div>
+	                    </div>
+	                </div>
+					<!-- 收藏部分 -->
+					<div class="sharebox clearfix">
+	                    <div class="bdsharebuttonbox bdshare-button-style1-24" style="float: left;">
+	                        <a href="#" class="bds_more"></a>
+	                        <a href="#" class="bds_weixin" title="分享到微信"></a>
+	                        <a href="#" class="bds_tsina" title="分享到新浪微博"></a>
+	                        <a href="#" class="bds_tqq" title="分享到腾讯微博"></a>
+	                        <a href="#" class="bds_qzone" title="分享到QQ空间"></a>
+	                        <a href="#" class="bds_tqf" title="分享到腾讯朋友"></a>
+	                    </div>
+	                    <a class="attention" id="insertFav" href="##" target="_self"></a>
+	                </div>
+				</div>
+				<!-- 商品说明 -->
+				<div class="conTopConBox">
+					<div id="name">
+	                    <h1> 
+	                    	<b id="saleQty"></b>
+	                    </h1>
+	                    <a href="##">
+		                    <strong class="productinfo" id="PromShortDescription">棉品专享价</strong>
+		                    <span class="bt_activity" id="bt_activity" style="display: none"></span>
+	                    </a>
+	                </div>
+	                <div>
+	                    <strong class="productinfo" id="promotionTitle"></strong>
+	                    <span class="productinfo"></span>
+	                </div>
+	                <!--name end-->
+	                <div class="fahuo-cang" style="height: 18px;">
+	                    <i></i>母婴之家发货
+	                </div>
+	                <div class="clearfix">
+	                	<ul id="summary" class="clearfix">
+	                		<!-- 促销价 -->
+	                		<li id="summary-price" class="clearfix">
+	                            <div class="sx_dt pdt5"> 促 销 价 </div>
+	                            <div class="sx_dd">
+	                                <strong class="p-price"></strong>
+	                                <del class="m-price" style="color: #999; margin-left: 10px">
+	                                	￥358.00
+	                                </del>
+	                            </div>
+	                        </li>
+	                        <!-- 促销信息 -->
+	                        <li id="divpromotionInfo" class="bdbtm clearfix">
+	                        	<div class="sx_dt" style="">促销信息</div>
+	                        	<div class="sx_dd" id="QueryPromInfosByProductId">
+	                        		<div class="sale_prom" id="A_MJ_01"></div>
+	                        		<div class="sale_prom" id="A_MG_01"></div>
+	                        		<div class="sale_prom" id="giftBox"></div>
+	                        		<!-- 轮播图 -->
+	                        		<div class="sale_prom" id="shangeGiftBox">
+	                        			<!-- 换购 -->
+	                        			<dl class="salePromotionType">
+	                        				<dt class="dt_icon4"></dt>
+	                        				<dd>
+	                        					<a href="##" class="promDetail colorf90">
+	                        						全场买即可换购（海淘商品除外）
+	                        					</a>
+	                        					<!-- 收起轮播图按钮 -->
+	                        					<div class="sp_act" id="sp_act_change">
+	                        						<a href="##" class="in colorf90" style="display: block;">收起
+	                        							<i></i>
+	                        						</a>
+	                        						<a href="##" target="_self" class="ex hide colorf90" style="display: none;">展开查看
+	                        							<i></i>
+	                        						</a>
+	                        					</div>
+	                        				</dd>
+	                        			</dl>
+	                        			<!-- 轮播图主体 -->
+	                        			<div class="promBox" id="shangeGiftBoxIn">
+	                        				<ul class="change_gift" id="shangeGift" style="margin-top: 0px;">
+	                        					<li>
+		                        					<a href="##"><img src="../img/goodDetail/about/1.jpg">
+		                        					</a>
+		                        					<b class="ongetGift style="bottom: -24px;">
+		                        						￥1.00换购
+		                        					</b>
+	                        					</li>
+	                        					<li>
+		                        					<a href="##"><img src="../img/goodDetail/about/2.jpg">
+		                        					</a>
+		                        					<b class="ongetGift style="bottom: -24px;">
+		                        						￥1.00换购
+		                        					</b>
+	                        					</li>
+	                        					<li>
+		                        					<a href="##"><img src="../img/goodDetail/about/3.jpg">
+		                        					</a>
+		                        					<b class="ongetGift style="bottom: -24px;">
+		                        						￥1.00换购
+		                        					</b>
+	                        					</li>
+	                        					<li>
+		                        					<a href="##"><img src="../img/goodDetail/about/4.jpg">
+		                        					</a>
+		                        					<b class="ongetGift style="bottom: -24px;">
+		                        						￥1.00换购
+		                        					</b>
+	                        					</li>
+	                        					<li>
+		                        					<a href="##"><img src="../img/goodDetail/about/5.jpg">
+		                        					</a>
+		                        					<b class="ongetGift style="bottom: -24px;">
+		                        						￥1.00换购
+		                        					</b>
+	                        					</li>
+	                        					<li>
+		                        					<a href="##"><img src="../img/goodDetail/about/6.jpg">
+		                        					</a>
+		                        					<b class="ongetGift style="bottom: -24px;">
+		                        						￥1.00换购
+		                        					</b>
+	                        					</li>
+	                        					<li>
+		                        					<a href="##"><img src="../img/goodDetail/about/7.jpg">
+		                        					</a>
+		                        					<b class="ongetGift style="bottom: -24px;">
+		                        						￥1.00换购
+		                        					</b>
+	                        					</li>
+	                        					<li>
+		                        					<a href="##"><img src="../img/goodDetail/about/8.jpg">
+		                        					</a>
+		                        					<b class="ongetGift style="bottom: -24px;">
+		                        						￥1.00换购
+		                        					</b>
+	                        					</li>
+	                        					<li>
+		                        					<a href="##"><img src="../img/goodDetail/about/9.jpg">
+		                        					</a>
+		                        					<b class="ongetGift style="bottom: -24px;">
+		                        						￥1.00换购
+		                        					</b>
+	                        					</li>
+	                        					<li>
+		                        					<a href="##"><img src="../img/goodDetail/about/10.jpg">
+		                        					</a>
+		                        					<b class="ongetGift style="bottom: -24px;">
+		                        						￥1.00换购
+		                        					</b>
+	                        					</li>
+	                        				</ul>
+	                        				<!-- 上翻，下翻按钮 -->
+	                        				<div class="prom_act">
+		                        				<a class="prom_add"></a>
+		                        				<a class="prom_reduce"></a>
+	                        				</div>
+	                        			</div>
+	                        		</div>
+	                        	</div>
+	                        </li>
+	                        <!-- 规格 -->
+	                        <li id="choose-version" class="clearfix">
+	                        	<div class="sx_dt">规&nbsp;&nbsp;&nbsp;&nbsp;格</div>
+	                        	<div class="sx_dd">
+	                        		<ul class="size_num" id="size_num">
+		                        		<!-- <li class="select">
+		                        			<a href="##" target="_self">75cm</a>
+		                        		</li> -->
+	                        		</ul>
+	                        	</div>
+	                        </li>
+	                        <!-- 颜色 -->
+	                        <li id="choose-color" class="clearfix">
+	                        	<div class="sx_dt">颜&nbsp;&nbsp;&nbsp;&nbsp;色</div>
+	                        	<div class="sx_dd">
+                                    <ul class="size_num" id="color_choose">
+	                                    <!-- <li class="select">
+	                                    	<a href="##" target="_self">哒可鸭</a>
+	                                    </li> -->
+                                    </ul>
+                                </div>
+	                        </li>
+	                        <!-- 送货信息 -->
+	                        <li id="sendinfo" class="clearfix hide">
+	                            <div class="sx_dt">送货信息</div>
+	                            <div class="sx_dd" id="sendSKUInfo" style="color: red"></div>
+	                        </li>
+	                        <!-- 加入购物车 -->
+	                        <li id="choose-amount" class="i_buy_div clearfix">
+	                        	<div class="sx_dt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	                        	<div class="sx_dd pdt10 clearfix">
+	                                <div class="choose_num_ul">
+	                                    <div class="computing_num">
+	                                        <input type="text" value="1" maxlength="2" id="txtqyt">
+	                                    </div>
+	                                    <div class="computing_act">
+	                                        <input type="button" class="add" id="plus">
+	                                        <input type="button" class="reduce" id="minus">
+	                                    </div>
+	                                </div>
+	                                <div class="shopping_div clearfix">
+	                                        <a class="shopping_car" id="jCarbtn1">加载中...</a>
+	                                </div>
+	                                <div class="phonebuydiv">
+	                                    <div id="phonebuy"></div>
+	                                    <div id="m-qrcode" class="hide" style="display: none;">
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </li>
+	                        <li id="amountbeyond" class="clearfix hide">
+	                            <div class="sx_dt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	                            <div class="sx_dd tb-msg" id="tbmsgBox">
+	                                <p class="tb-stop">您所填写的商品数量超过库存！</p>
+	                            </div>
+	                        </li>
+	                	</ul>
+	                </div>
+				</div>
+				<!-- 商品星级 -->
+				<div class="conTopRightBox">
+					<div class="certified_div">
+						<dl>
+							<dt>
+								<a href="##" title="包邮说明">
+									<i class="certified_1"></i>
+								</a>
+							</dt>
+							<dd>
+								<a href="##" title="包邮说明">包邮说明</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<i class="certified_2"></i>
+							</dt>
+							<dd>正品保障</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href="##" title="售后服务">
+									<i class="certified_3"></i>
+								</a>
+							</dt>
+							<dd>
+								<a href="##" title="售后服务">售后服务</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="logo_div">
+						<div class="little_logo">
+	                        <a href="##" class="stats">
+	                            <img src="http://img.boodoll.cn//pdt/brand/img/a1/784.jpg">
+	                        </a>
+	                    </div>
+					</div>
+					<div class="positive_comment">
+						<div class="clearfix">
+	                        <div class="first_rate fl" id="NofirstRate">
+	                        </div>
+	                        <div class="comment_num_div fr">
+	                            <a href="#shangppinj" class="comment_num">7 人评论</a>
+	                        </div>
+	                    </div>
+	                    <div class="star_div">
+	                        <i class="smile_face"></i>
+	                        <span class="star_rate sa5" title="5 分"></span>
+	                    </div>
+	                    <div class="comment_div">
+                            <dl class="comment comment_bdbtm">
+                                <dt class="comment_name">myzj***</dt>
+                                <dd class="comments">很可爱的样子</dd>
+                            </dl>
+                            <dl class="comment comment_bdbtm">
+                                <dt class="comment_name">myzj***</dt>
+                                <dd class="comments">囤货的，还没有用哦，不过摸起来特别舒服。</dd>
+                            </dl>
+                            <dl class="comment">
+                                <dt class="comment_name">myzj***</dt>
+                                <dd class="comments">很可爱，准备冬天给宝宝用</dd>
+                            </dl>
+                    	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 详情 选项卡-->
+		<div class="bodyCon clearfix" id="NogoodsPrice">
+			<!-- 二维码==左层 -->
+			<div class="part3_L_box">
+				<div class="part3_L">
+					<!-- 二维码 -->
+					<div class="part3_L-1">
+	                    <div class="erwei_code">
+	                        <img class="scrollLoading" src="../img/goodDetail/api.png" style="width: 100px">
+	                    </div>
+	                    <p class="erwei_intro">
+	                        手机下单有惊喜<br>
+	                        分享朋友更容易
+	                    </p>
+	                </div>
+				</div>
+				<!-- 最近浏览 -->
+				<div class="part3_L nobtL" style="margin-top: 10px;" id="productReviewLast">
+					<dl class="rela_type_dl nomarginbtm">
+						<dt>最近浏览</dt>
+						<dd class="recent_scan_box brand_scroll" id="ReviewProductId" style="overflow: hidden; outline: none;">
+							<dl class="buy_too_dl">
+								<dt>
+									<a href="##" class="stats">
+										<img src="../img/goodDetail/later.jpg" class="scrollLoading" style="margin: 0 auto;">
+									</a>
+								</dt>
+								<dd>
+									<p>
+										<a href="##" class="stats">
+											膳魔师高真空不锈钢两用瓶红色550ml（蓝盖）-带杯套
+											<span></span>
+										</a>
+									</p>
+									<p class="center_orange">
+										￥
+										<span>388.00</span>
+									</p>
+								</dd>
+							</dl>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<!-- 二维码==右层 -->
+			<div class="part3_R">
+				<!-- 头部 -->
+				<div class="part3_R_3" id="part3_R_3_div">
+					<div class="tab_nav_box pdt8" id="tab_H_box_fix" style="position: static; top: 0px; z-index: 20;">
+						<div class="wC_b tab_box">
+							<ul class="wC_b group_suit_ul" id="product_intro" style="position: relative;">
+								<li class="group_suit_li_cur">
+									<a href="##" target="_self">
+										商品介绍
+									</a>
+								</li>
+								<li id="spinpl" class="">
+									<a href="##" target="_self">
+										商品评论
+										<em></em>
+									</a>
+								</li>
+								<li class="">
+									<a href="##" target="_self">
+										商品咨询
+									</a>
+								</li>
+								<li class="">
+									<a href="##" target="_self">
+										品质保障
+									</a>
+								</li>
+							</ul>
+							<a class="purchase" id="joinPurchase"></a>
+						</div>
+					</div>
+					<ol class="part3_R_3_ol" id="intro_box" style="display: block;">
+						<li>
+							<ul class="detail-list">
+								<li>商品名称：威尔贝鲁wellber 15厚棉彩棉新生儿带帽睡袋75cm哒可鸭</li>
+								<li>适用年龄：0-36个月</li>
+								<li>性别：男女适用</li>
+								<li>产地：中国</li>
+								<li>季节：春秋冬季</li>
+								<li>棉品材质：棉,聚酯纤维</li>
+							</ul>
+						</li>
+					</ol>
+				</div>
+				<!-- 商品介绍 -->
+				<div class="shangp1" style="display: block;">
+					<!--  产品介绍大banner-->
+					<div class="B_banner" id="B_banner_div">
+						<div class="content_tpl">
+							<p>
+								<img src="../img/goodDetail/detail/1.jpg" style="float:none;">
+							</p>
+							<p>
+								<img src="../img/goodDetail/detail/2.jpg" style="float:none;">
+							</p>
+							<p>
+								<img src="../img/goodDetail/detail/3.jpg" style="float:none;">
+							</p>
+							<p>
+								<img src="../img/goodDetail/detail/4.jpg" style="float:none;">
+							</p>
+							<p>
+								<img src="../img/goodDetail/detail/5.jpg" style="float:none;">
+							</p>
+							<p>
+								<img src="../img/goodDetail/detail/6.jpg" style="float:none;">
+							</p>
+							<p>
+								<br>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- 商品评论 -->
+				<div class="shangp2" style="margin-top: 30px; display: block;">
+					<!-- 好评度 -->
+					<div class="wC_b good_rate" id="shangppinj">
+	                    <h2>商品评价</h2>
+	                    <div class="mc">
+	                        <div id="i-comment">
+	                            <div class="rate">
+	                                <strong id="NoOfFavorableCommentId"></strong>
+	                                <span>好评度</span>
+	                            </div>
+	                            <div class="percent">
+	                                <dl>
+	                                    <dt>好评</dt>
+	                                    <dd>
+	                                        <div><i></i><em id="NOofFavorable"></em></div>
+	                                        <span id="NOofFavorableValue"></span></dd>
+	                                </dl>
+	                                <dl>
+	                                    <dt>中评</dt>
+	                                    <dd>
+	                                        <div><i></i><em id="NOofAverage"></em></div>
+	                                        <span id="NOofAverageValue"></span></dd>
+	                                </dl>
+	                                <dl>
+	                                    <dt>差评</dt>
+	                                    <dd>
+	                                        <div><i></i><em id="NOofPoor"></em></div>
+	                                        <span id="NOofPoorValue"></span>
+	                                    </dd>
+	                                </dl>
+	                            </div>
+	                            <div class="actor-new">
+	                                <dl>
+	                                    <dt>买家印象：</dt>
+	                                    <dd class="p-bfc" id="userGoodsTagId"></dd>
+	                                </dl>
+	                                <div class="clr"></div>
+	                                <b></b>
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                </div>
+	                <!-- 评价切换 -->
+	                <div class="pinjia_box pdt8" id="shangpwend">
+	                    <div class="wC_b tab_box">
+	                        <ul class="group_suit_ul" id="pingjia_tab">
+	                            <li class="group_suit_li_cur">
+		                            <a href="##" target="_self">
+		                            	全部评论
+		                            	<span class="orange9" id="NoProductCommentAll"></span>
+		                            </a>
+	                            </li>
+	                            <li>
+		                            <a href="##" target="_self">
+		                            	好评
+		                            	<span class="orange9" id="NoProductCommentFav"></span>
+	                            	</a>
+	                            </li>
+	                            <li>
+		                            <a href="##" target="_self">
+		                            中评
+		                            <span class="orange9" id="NoproductCommentAvg"></span>
+		                            </a>
+	                            </li>
+	                            <li>
+		                            <a href="##" target="_self">
+		                            差评
+		                            <span class="orange9" id="NoProductCommentPoor"></span>
+		                            </a>
+	                            </li>
+	                            <li>
+		                            <a href="##" target="_self">
+		                            精华
+		                            <span class="orange9" id="NoProductCommentHighLight"></span>
+		                            </a>
+	                            </li>
+	                        </ul>
+	                    </div>
+	                    <ol id="pingjia_box">
+	                        <!-- 5个li -->
+	                        <li>
+	                            <ul class="pinjia" id="UserCommentPart">
+	                                <!-- 全部评论部分，10个li -->
+	                                <li>
+	                                    <div class="loading" style="padding-left: 420px"></div>
+	                                    <div class="comment_mod">
+	                                        <div class="comment_con">
+	                                            <div class="mainP" id="userCommentmainP">
+	                                                <div class="clear"></div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                        <li class="hide">
+	                            <ul class="pinjia" id="divgoodcomment">
+	                                <!-- 好评评论部分，10个li -->
+	                                <li>
+	                                    <div class="loading" style="padding-left: 420px"></div>
+	                                    <div class="comment_mod">
+	                                        <div class="comment_con">
+	                                            <div class="mainP" id="divgoodCommentmainP">
+
+	                                                <div class="clear"></div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                        <li class="hide">
+	                            <ul class="pinjia" id="divintercomm">
+	                                <!-- 中评评论部分，10个li -->
+	                                <li>
+	                                    <div class="loading" style="padding-left: 420px"></div>
+	                                    <div class="comment_mod">
+	                                        <div class="comment_con">
+	                                            <div class="mainP" id="divinterCommentmainP">
+	                                                <div class="clear"></div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                        <li class="hide">
+	                            <ul class="pinjia" id="divpoorcomment">
+	                                <!-- 差评论部分，10个li -->
+	                                <li>
+	                                    <div class="loading" style="padding-left: 420px"></div>
+	                                    <div class="comment_mod">
+	                                        <div class="comment_con">
+	                                            <div class="mainP" id="divpoorCommentmainP">
+
+	                                                <div class="clear"></div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                        <li class="hide">
+	                            <ul class="pinjia" id="divjinghuacomment">
+	                                <!-- 加精评论部分，10个li -->
+	                                <li>
+	                                    <div class="loading" style="padding-left: 420px">正在加载。。。</div>
+	                                    <div class="comment_mod">
+	                                        <div class="comment_con">
+	                                            <div class="mainP" id="divjinghuaCommentmainP">
+	                                                <div class="clear"></div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                    </ol>
+	                    <!-- 查看全部品论 -->
+	                    <div class="see_pin">
+	                        <p class="see_all_p">
+	                        	<a href="##">[查看全部评价]</a>
+	                        </p>
+	                        <div class="pagebox" id="pages">
+	                            <p id="p2" style="display: none"></p>
+	                            <ul class="pagination" id="pagination2"></ul>
+	                        </div>
+	                    </div>
+	                </div>
+				</div>
+				<!-- 商品咨询 -->
+				<div class="shangp3" style="margin-top: 30px; display: block;">
+					<!--全部咨询 -->
+					<div class="pinjia_box pdt8">
+	                    <div class="wC_b tab_box">
+	                        <ul class="group_suit_ul" id="pro-tab">
+	                            <li class="group_suit_li_cur" >
+		                            <a href="##" target="_self">
+		                            	全部咨询
+		                            	<span class="orange9" id="NoGoodsAdvostoryCount"></span>
+		                            </a>
+	                            </li>
+	                            
+	                            <li class="">
+		                            <a href="##" target="_self">
+		                            	商品
+		                            	<span class="orange9" id="NoGoodsAdvostoryCountBySKU"></span>
+		                            </a>
+	                            </li>
+	                            <li class="">
+		                            <a href="##" target="_self">
+		                            配送
+		                            <span class="orange9" id="NoGoodsAdvostoryCountByStock"></span>
+		                            </a>
+	                            </li>
+	                            <li class="">
+		                            <a href="##" target="_self">
+		                            支付
+		                            <span class="orange9" id="NoGoodsAdvostoryCountBypay"></span>
+		                            </a>
+	                            </li>
+	                            <li class="">
+		                            <a href="##" target="_self">
+		                            	发票
+		                            	<span class="orange9" id="NoGoodsAdvostoryCountBybill"></span>
+		                            </a>
+	                            </li>
+	                            <li class="">
+		                            <a href="##" target="_self">
+		                            	常见问题
+		                            </a>
+	                            </li>
+	                        </ul>
+	                    </div>
+	                    <ol id="consult_box">
+	                        <!-- 6个li -->
+	                        <li style="display: list-item;">
+	                            <ul class="question_ul" id="Noquestion">
+	                                <!-- 10个li -->
+	                            </ul>
+	                        </li>
+	                        <li class="hide" style="display: none;">
+	                            <ul class="question_ul" id="NoquestionSKU">
+	                                <!-- 10个li -->
+	                            </ul>
+	                        </li>
+	                        <li class="hide" style="display: none;">
+	                            <ul class="question_ul" id="NOquestionStock">
+	                                <!-- 10个li -->
+	                            </ul>
+	                        </li>
+	                        <li class="hide" style="display: none;">
+	                            <ul class="question_ul" id="NoquestionPay">
+	                                <!-- 10个li -->
+	                            </ul>
+	                        </li>
+	                        <li class="hide" style="display: none;">
+	                            <ul class="question_ul" id="NoquestionBill">
+	                                <!-- 10个li -->
+	                            </ul>
+	                        </li>
+	                        <li class="hide" style="display: none;">
+	                            <ul class="question_ul" id="NoquestionPromotion">
+	                                <!-- 10个li -->
+	                            </ul>
+	                        </li>
+	                    </ol>
+	                    <!-- 查看全部咨询 -->
+	                    <div class="see_all_consult">
+	                        <p class="see_consult_p">
+		                        购买之前，如有问题，请
+		                        <a href="##" class="publishIcon" id="makeConsultBtn" target="_self"></a>
+		                    </p>
+		                    <p class="see_consult_num">
+		                        共
+		                        <span id="NoGoodsAdvostoryCountAll"></span>
+		                        条
+		                        <a href="##">[查看全部咨询]</a>
+	                        </p>
+	                    </div>
+	                </div>
+				</div>
+				<!-- 品质保证 -->
+				<div class="shangp4" style="margin-top: 30px;">
+					<!--品质保障-->
+					<div class="wC_b logo_intro product_intro" id="qualitySure">
+	                    <h2>品质保障</h2>
+	                    <p>
+	                        温馨提示：详情请查看产品包装文字、说明书与保修卡，或致电母婴之家客服热线垂询。<br>
+	                    </p>
+	                </div>
+				</div>
+			</div>
+		</div>
+	<!-- 成功加入购物车 -->
+		<div class="hide_box" id="shoppingDiv" style="display: none; margin: 0px;">
+	        <h4 class="pop_title">
+	            <span class="pop_cart_icon">购物车</span>
+	            <a title="关闭窗口" class="mesCloseA"></a>
+	        </h4>
+	        <p>
+	            <label></label><br>
+	        </p>
+	        <table width="280" height="70" style="margin: 0 auto;">
+		        <tbody>
+		        	<tr>
+		            	<td id="mesShop" align="left">加入成功</td>
+		            </tr>
+		            <tr>
+		                <td align="center">
+	                        <a id="mesClose" href="##"></a>
+	                        <a href="##" class="gotocartnow"></a>
+	                    </td>
+	                </tr>
+		        </tbody>
+	        </table>
+	        <p></p>
+    	</div>
+    <!-- 页脚 -->
+		<span class="clear"></span>
+		<div id="footer"></div>
+	<!-- script -->
+		<script type="text/javascript" src="../js/jquery.min.js" ></script>
+		<script type="text/javascript">
+			$.ajax({
+			 	type: "get",
+			 	async:false,
+			 	url: "../html/header.html",        
+			 	success: function(json){
+			 		$("#header").html(json);
+			 	},
+			 	error: function(){
+			 	    console.log('header fail');
+			 	}
+			});
+			$.ajax({
+			 	type: "get",
+			 	async:false,
+			 	url: "../html/nav.html",        
+			 	success: function(json){
+			 		$("#nav").html(json);
+			 	},
+			 	error: function(){
+			 	    console.log('nav fail');
+			 	}
+			});
+			$.ajax({
+			 	type: "get",
+			 	async:false,	
+			 	url: "../html/footer.html",        
+			 	success: function(json){
+			 		$("#footer").html(json);
+			 	},
+			 	error: function(){
+			 	    console.log('footer fail');
+			 	}
+			});
+		</script>
+		<script type="text/javascript" src="../js/goodDetail.js" ></script>
+		<script type="text/javascript" src="../js/jquery.cookie.js" ></script>
+	</body>
+</html>

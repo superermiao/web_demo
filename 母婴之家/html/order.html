@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>母婴之家-【确认订单】</title>
+		<link rel="stylesheet" href="../css/header.css" />
+		<link rel="stylesheet" href="../css/nav.css">
+		<link rel="stylesheet" href="../css/footer.css" />
+		<link rel="stylesheet" href="../css/order.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+	</head>
+	<body>
+	<!-- 头部 -->
+		<div id="header"></div>
+	<!-- 订单主体 -->
+		<div class="order-outer">
+			<!-- 进度条 -->
+			<div class="logo-step">
+				<div class="logo">
+		            <h1>
+		                <a href="index.html" target="_self">
+		                    <img src="../img/order/logo29new.png" alt="母婴之家" title="母婴之家" width="152" height="73">
+		                </a>
+		            </h1>
+		        </div>
+		        <div class="step">
+        		</div>
+        		<div class="clear"></div>
+			</div>
+			<!-- 订单内容 -->
+			<div class="checkout">
+				<!-- 收货信息 -->
+				<div id="checkout-step-1" class="checkout-step-1">
+					<div class="step-title">
+		                <h2>收货信息</h2>
+		            </div>
+		            <div class="step-content">
+		            	<div id="consignee" class="sbox-wrap">
+		            		<div class="sbox">
+		            			<div class="form">
+		            				<!-- 已存在的地址 -->
+		            				<div id="consignee-list" name="consignee-list">
+										<input type="hidden" value="0" id="insertAddress">
+										<!--hidden 隐藏参数 开始 -->
+		            				</div>
+		            				<!--更多常用收货人-->
+		            				<div class="address-list" id="loadAllAddress_More" >
+		            					<div class="inner group">
+		            						<div id="select-more" class="select-expand">
+			            						<span id="loadAllAddress">更多常用地址</span>
+			            						<s></s>
+		            						</div>
+		            					</div>
+		            				</div>
+		            				<!---详细收货人信息表单-->
+		            				<div class="item" id="use-new-address" style="display:block">
+		            					<label class="consignee_radio_new" id="addNumNote" onclick="use_NewConsignee()">+ 新增收货地址</label>
+		            					<span id="addNumLimitNote" class="status error" style="display:none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当前地址数量已达上限，若要继续添加新地址，请先删除部分收货地址。
+                                		</span>
+		            				</div>
+		            				<!---填写详细收货人信息表单-->
+		            				<div id="write-info" class="write-info" style="display:block">
+		            					<!-- 表单 -->
+		            					<div class="consignee-form" id="consignee-form" name="consignee-form">
+		            						<!-- 收货人 -->
+		            						<div class="list message" id="name_div">
+		                                        <span class="label"><em>*</em>收货人：</span>
+		                                        <div class="field">
+		                                            <input type="text" class="textbox" id="consignee_name">
+		                                        </div>
+		                                        <span class="status error" id="name_div_error">			<!-- 请您填写收货人姓名 -->
+		                                        </span>
+		                                    </div>
+		                                    <!-- 所在地 -->
+		                                    <div class="list select-address" id="area_div">
+		                                    	<span class="label"><em>*</em>所在地区：</span>
+		                                    	<div class="field">
+													<span id="span_area">
+														<select id="s_province" name="s_province"></select>  
+													    <select id="s_city" name="s_city" ></select>  
+													    <select id="s_county" name="s_county"></select>
+													    <script class="resources library" src="../js/lib/area.js"></script>
+													    
+													    <script type="text/javascript">_init_area();</script>
+												    </span>
+												</div>
+		                                    	<span class="form-tip">
+		                                            <span class="status error" id="area_div_error"></span>&nbsp;&nbsp;标“*”的为支持货到付款的地区        
+		                                        </span>
+		                                    </div>
+		                                 	<!-- 详细地址 -->
+		                                 	<div class="list full-address" id="address_div">
+		                                 		<span class="label"><em>*</em>详细地址：</span>
+		                                 		<div class="field">
+		                                            <span class="fl selected-address" id="areaNameTxt"></span>
+		                                            <input type="text" class="textbox" id="consignee_address" name="consigneeParam.address" maxlength="50">
+		                                            <span class="status error" id="address_div_error"></span>
+		                                        </div>
+		                                 	</div>
+		                                 	<!-- 手机号码 -->
+		                                 	<div class="list" id="call_mobile_div">
+		                                 		<span class="label"><em>*</em>手机号码：</span>
+		                                 		<div class="field">
+		                                            <input type="text" class="textbox" id="consignee_mobile" name="consigneeParam.mobile" maxlength="11">
+		                                        </div>
+		                                        <span class="status error" id="call_div_error"></span>
+		                                 	</div>
+		                                 	<!-- 固定电话 -->
+		                                 	<div class="list" id="call_phone_div">
+		                                 		<span class="label">固定电话：</span>
+		                                 		<div class="field">
+		                                            <input type="text" class="textbox" id="consignee_phone_left" name="consigneeParam.phone" maxlength="3" value="区号">
+		                                            <s>--</s>
+		                                            <input type="text" class="textbox" id="consignee_phone_middle" name="consigneeParam.phone" maxlength="8" value="电话号码">
+		                                            <s>--</s>
+		                                            <input type="text" class="textbox" id="consignee_phone_right" name="consigneeParam.phone" maxlength="4" value="分机号">
+		                                        </div>
+		                                        <span class="status error" id="telephone_div_error"></span>
+		                                 	</div>
+		            					</div>
+		            					<!-- 保存按钮 -->
+		            					<div class="form-btn group">
+		            						<a href="#none" class="btn-submit" style="display: block" id="saveConsignee">
+		            							<span id="saveConsigneeTitleDiv">保存收货人信息</span>
+		            						</a>
+		            						<a href="#none" class="btn-cancel " id="cancelsaveConsignee">
+		            							<span>取消</span>
+		            						</a>
+		            						<div class="loading loading-1" style="display: none" id="WaitingConsignee">
+			            						<b></b>
+			            						正在提交信息，请等待！
+		            						</div>
+		            					</div>
+		            				</div>
+		            			</div>
+		            		</div>
+		            	</div>
+		            </div>
+				</div>
+				<!-- 其他 -->
+				<div id="ResponseList">
+					<!-- 支付方式 -->
+					<div id="checkout-step-2" class="checkout-step-2">
+						<a name="payAndShipFocus"></a>
+						<div class="step-title">
+					        <h2>支付方式</h2>
+					    </div>
+					    <div class="step-content" id="payhtml">
+					    	<div id="payment-ship" class="sbox-wrap" style="position: static;">
+					    		<div class="payment-tip">
+					    			<div id="save-payAndShip-tip" class="step-right">
+				                        <span class="save-consignee-payship">由于您更改了收货人信息，请重新设置支付方式
+				                        </span>
+				                    </div>
+					    		</div>
+					    		<div class="payment">
+					    			<input type="hidden" id="instalmentPlan" value="true">
+					    			<div class="mc form">
+					    				<div class="item item-selected">
+			                                <div class="label">
+			                                    <input type="radio" checked="checked" id="pay-method--100" class="hookbox">
+			                                    <label>
+			                                        在线支付
+			                                    </label>
+			                                </div>
+			                                <div class="field">
+			                                    <span class="tip">即时到帐，支持绝大数银行借记卡及部分银行信用卡</span>
+			                                </div>
+			                                <span class="clr"></span>
+			                                <div class="sment-mark item-selected" id="otherSupportSkus-1"></div>
+			                            </div>
+					    			</div>
+					    		</div>
+					    	</div>
+					    </div>
+					    <div class="step-content-type1" id="step-content-pay-sure" style="display: none">
+				            请先 “确认收货信息”
+				        </div>
+					</div>
+					<!-- 发票信息 -->
+					<div id="checkout-step-3" class="checkout-step-3">
+				        <a name="invoiceFocus"></a>
+				        <div class="step-title">
+				            <h2 style="display: inline;">发票信息</h2>
+				        </div>
+				        <div class="step-content">
+				        	<div id="part-invoice" class="sbox-wrap">
+				        		<div class="sbox">
+				        			<div class="mc" style="padding-top: 10px;" id="isHasinvoice">
+			                            <div class="item">
+			                                <input type="checkbox" id="invoice-need" class="hookbox">
+			                                <label>需要发票</label>
+			                            </div>
+			                        </div>
+				        		</div>
+				        	</div>
+			                <div class="step-content-type1" id="step-content-invoice-sure" style="display: none">
+			                    请先 “确认收货信息”
+			                </div>
+				        </div>
+				    </div>
+				    <!-- 送货清单 -->
+				    <div id="OrderHtml">
+				    	<input type="hidden" id="hidCardTypeList">
+				    	<!-- 第四步：清单 -->
+				    	<div id="checkout-step-4" class="checkout-step-4">
+				    		<div class="step-title">
+					            <h2 class="fl">送货清单</h2>
+					            <a class="fr" href="shopCar.html" target="_self">返回购物车修改</a>
+					        </div>
+					        <div class="step-content">
+					        	<div>
+					        		<div id="part-order" class="sbox-wrap" iserror="0" msg>
+					        			<div class="part-order-dl" name="OrderFor" iserror="0" carttype="1" activitysysno="0" platformsysno="0" deleveryhouseid="0" seamarkid="0">
+					        				<div class="part-order-dt">
+					        					<div class="fl">
+                                        			<span class="order-type-shang">商城</span>
+                                        			&nbsp;&nbsp;订单
+                                        			<span class="order-num">1</span>
+                                    				<em>母婴之家发货</em>
+                                				</div>
+                                				<div class="fl" style="position: relative;">
+                                					<div class="fl" style="position: relative;">
+				                                        <div class="order-time" style="display: block">
+				                                            配送时间<div class="dl">
+				                                                <div class="dt">工作日、双休日均可配送</div>
+				                                                <div class="dd" name="DelivereyTimeSlot">
+				                                                    <div class="item">
+				                                                        <input type="radio" checked="checked" class="deliver-date" id="deliver-date-1_1">
+				                                                        <label>工作日、双休日均可配送</label>
+				                                                    </div>
+				                                                    <div class="item item-selected">
+				                                                        <input type="radio" class="deliver-date" name="radio-date" id="deliver-date-2_1">
+				                                                        <label>只工作日送货（双休日不用送）</label>
+				                                                    </div>
+				                                                    <div class="item">
+				                                                        <input type="radio" class="deliver-date" name="radio-date" id="deliver-date-3_1">
+				                                                        <label>只双休日送货</label>
+				                                                    </div>
+				                                                    <div class="clear"></div>
+				                                                </div>
+				                                            </div>
+				                                        </div>
+					                                </div>
+                                				</div>
+                                				<div class="clear"></div>
+					        				</div>
+					        				<div class="part-order-dd">
+					        					<div class="order-review-thead">
+				                                    <span class="fore-name">商品信息</span>
+				                                    <span class="fore-price">单价（元）</span>
+				                                    <span class="fore-num">数量（件）</span>
+				                                    <span class="fore-cal">小计（元）</span>
+				                                    <div class="clear"></div>
+				                                </div>
+				                                <div class="order-review-tbody">
+				                                	<ul class="order-review-list">
+				                                	</ul>
+				                                	<div class="clear"></div>
+				                                </div>
+				                                <div class="order-review-tfoot">
+				                                	<!-- 留言 -->
+				                                	<div class="fl">
+				                                		<div class="order-review-tfoot-fl">
+				                                			<div class="order-review-tfoot-fl-dt">
+				                                                <a href="#none">
+				                                                	若您对包裹有特殊要求，请在此留言
+				                                                </a>
+				                                            </div>
+				                                            <!-- 订单备注 -->
+				                                            <div class="order-review-tfoot-fl-dd">
+				                                            	<p class="fl">订单备注：</p>
+				                                            	<div class="fl remark-con"></div>
+				                                            	<div class="fl remark">
+				                                                    <textarea name="Message_1" id="Message_1" maxlength="30"></textarea>
+				                                                    <div class="order-review-tfoot-btn" style="display: none">
+				                                                        <a href="#none" class="sure-btn">确定</a>
+				                                                        <a href="#none" class="cancel-btn">取消</a>
+				                                                    </div>
+				                                                </div>
+				                                                <div class="clear"></div>
+				                                            </div>
+				                                            <div class="clear"></div>
+				                                		</div>
+				                                	</div>
+				                                	<!-- 总结算 -->
+				                                	<div class="order-review-tfoot-fr">
+				                                		<!-- 商品金额 -->
+				                                		<div class="order-review-tfoot-list">
+				                                            <span class="pro-totle">商品金额：</span>
+				                                            <strong>¥368.00</strong>
+				                                        </div>
+				                                        <!-- 抵扣金额 -->
+				                                        <div class="order-review-tfoot-list">
+				                                            <span class="pro-pay-cheap">抵扣金额：</span>
+				                                            <strong id="SubDiscountPrice_1">¥0.00</strong>
+				                                        </div>
+				                                        <!-- 运费 -->
+				                                        <div class="order-review-tfoot-list">
+				                                            <span class="pro-pay-deliver">运费：</span>
+				                                            <strong>¥0.00</strong>
+				                                        </div>
+				                                        <!-- 应付金额 -->
+				                                        <div class="order-review-tfoot-list">
+				                                            <span class="pro-pay-totle">应付金额：</span>
+				                                            <strong style="color: #E60012; font-weight: bold;" id="SubTotalPrice_1">¥368.00 </strong>
+				                                        </div>
+				                                        <div class="clear"></div>
+				                                	</div>
+				                                	<div class="clear"></div>
+				                                </div>
+					        				</div>
+					        				<div class="clear"></div>
+					        			</div>
+					        		</div>
+					        	</div>
+					        </div>
+				    	</div>
+				    	<!-- 第五步：结算 -->
+				    	<div id="checkout-step-5" class="checkout-step-5">
+				    		<div class="step-title">
+					            <h2>订单结算</h2>
+					        </div>
+					        <div class="step-content">
+					        	<div class="order-summary">
+					        		<!-- 礼品卡 -->
+					        		<div class="fl" style="border-right: 1px dotted #ccc;padding-bottom: 10px;">
+					        			<div class="order-coupon">
+					        				<div class="item" id="orderGiftCard">
+					        					<!-- 使用礼品卡 -->
+					        					<div class="toggle-title">
+					        						<a id="toggle" class="toggler" href="##">
+					                                    <b></b>
+					                                    <em id="giftCardTitle">
+					                                    	使用礼品卡
+					                                    </em>
+					                                </a>
+					                                <span id="giftCardCon">
+					                                	本次礼品卡支付金额为
+					                                	<em id="giftcardprice" class="red">￥0</em>
+                                    					<a href="##" id="cancel_giftcard">
+                                    						取消使用礼品卡
+                                    					</a>
+                                    				</span>
+					        					</div>
+					        					<!-- 未完成 -->
+					        					<div class="toggle-giftCard-wrap">
+					        						<div class="toggle-giftCard-wrap" id="orderGiftCardId">
+					        							<div class="giftCardbox" id="giftCards">
+					        								
+					        							</div>
+					        						</div>
+					        					</div>
+					        				</div>
+					        			</div>
+					        			<input type="hidden" id="validateCodeVal" value="0">
+					        			<div id="VerificationCode" style="display: none;"></div>
+					        		</div>
+									<!-- ——结算———  -->
+					        		<div class="statistic">
+					        			<div class="statistic-list">
+					        				<!-- 总金额 -->
+					        				<div class="list">
+					                            <span>
+					                                <em id="span-skuNum">
+					                                    2
+					                                </em>
+					                                件商品，总商品金额：
+					                            </span>
+					                            <em class="price" id="warePriceId">¥556.00
+					                            </em>
+					                            <div class="clear"></div>
+					                        </div>
+					                        <!-- 总运费 -->
+					                        <div class="list">
+					                            <span>
+					                                <em id="span-deliverNum">1</em>
+					                                笔订单，总运费：
+					                            </span>
+					                            <em class="price" id="deliverPriceId">¥0.00
+					                            </em>
+					                            <div class="clear"></div>
+					                        </div>
+					                        <!-- 抵扣金额 -->
+					                        <div class="list">
+					                            <span>抵扣总额：</span>
+					                            <em class="price" id="cachBackId" price="0">¥0.00</em>
+					                            <div class="clear"></div>
+					                        </div>
+					        			</div>
+					        			<!-- 总付金额 -->
+					        			<div class="list">
+					        				<div class="list">
+						                        <span>应付总额：</span>
+						                        <em class="price">
+						                            <strong id="sumPayPriceId" price="556">¥556.00
+						                            </strong>
+						                        </em>
+						                        <div class="clear"></div>
+						                    </div>
+					        			</div>
+					        			<!-- 正在提交订单 -->
+					        			<div class="submit-check">
+					                        <div style="text-align: center; display: none" id="SubOrderLoading">
+					                            <span class="loading-2">正在努力提交订单……</span>
+					                        </div>
+					                    </div>
+					                    <!-- 提交订单按钮 -->
+					                    <button type="submit" class="checkout-submit" id="order-submit"></button>
+					                    <div class="submit-check-info" id="submit_check_info_message" style="display: none">
+					                        <i class="arrconf"></i>
+					                        <span id="submitOrderMsg" style="display: none;"></span>
+					                    </div>
+					                    <div class="clear"></div>
+					        		</div>
+					        		<div class="clear"></div>
+					        	</div>
+					        	<div class="clear"></div>
+					        </div>
+				    	</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	<!-- 尾部 -->
+		<div id="footer"></div>
+	<!-- script -->
+		<script type="text/javascript" src="../js/jquery-1.12.3.js" ></script>
+		<script type="text/javascript">
+			$.ajax({
+			 	type: "get",
+			 	async:false,
+			 	url: "../html/header.html",        
+			 	success: function(json){
+			 		$("#header").html(json);
+			 	},
+			 	error: function(){
+			 	    console.log('header fail');
+			 	}
+			});
+			$.ajax({
+			 	type: "get",
+			 	async:false,	
+			 	url: "../html/footer.html",        
+			 	success: function(json){
+			 		$("#footer").html(json);
+			 	},
+			 	error: function(){
+			 	    console.log('footer fail');
+			 	}
+			});
+		</script>
+		<script type="text/javascript" src="../js/order.js" ></script>
+		<script type="text/javascript" src="../js/jquery.cookie.js" ></script>
+	</body>
+</html>

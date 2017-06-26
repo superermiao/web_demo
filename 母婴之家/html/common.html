@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="site-nav" class="site-nav">
+			<!-- 横着的 -->
+			<div id="sn-bd" class="sn-bd">
+				<div class="sn-container clearfix">
+					<ul class="header-quick-menu clearfix fl">
+						<li class="curpage"><a href="##">母婴之家</a></li>
+						<li><a href="##">母婴海淘</a></li>
+						<li class="phonebox" id="phonebox">
+							<i class="sprite-icon icon-mobile-phone"></i>
+							<a href="##">手机版</a>
+							<div class="phonehidediv" id="phonehidediv" style="display: none;"></div>
+						</li>
+					</ul>
+					<ul class="ssn-quick-menu clearfix fr">
+						<li>
+							<span>欢迎来到母婴之家！</span>
+							<a href="##" id="loginBtn" target="_blank">[登录]</a>
+							<a href="##" id="regBtn" target="_blank">[免费注册]</a>
+						</li>
+						<li class="ssn-separator"></li>
+						<!-- 二级导航：我的订单 -->
+						<li class="ssn-home" id="ssn-home">
+							<div class="ssn-hover-div">
+								<a href="##" target="_blank">我的订单</a>
+								<b></b>
+							</div>
+							<div id="Theader_down01" class="Theader_top01_divON" style="display: none;">
+								<a href="##">我的家</a><br>
+								<a href="##">我的提问</a><br>
+								<a href="##">我的评论</a><br>
+								<a href="##" target="_blank">我的收藏</a><br>
+								<a href="##">我的幸运星</a>
+							</div>
+						</li>
+						<li class="ssn-separator"></li>
+						<!-- 二级导航：客户服务 -->
+						<li class="ssn-mybrand" id="ssn-mybrand">
+							<div class="ssn-hover-div">
+								<a href="##">客户服务</a>
+								<b></b>
+							</div>
+							<div id="Theader_down02" class="Theader_top01_divON" style="display: none;">
+								<a href="##">在线客服</a><br>
+								<a href="##">帮助中心</a>
+							</div>
+						</li>
+						<li class="ssn-separator"></li>
+						<li><a href="##">商务合作</a></li>
+						<li class="ssn-separator"></li>
+						<!-- 二级导航：客户服务 -->
+						<li class="ssn-sitemap" id="ssn-sitemap">
+							<div class="ssn-hover-div">
+								<a href="##">网站导航</a>
+								<b></b>
+							</div>
+							<div id="Theader_down03" class="Theader_top01_divON" style="display: none;">
+								<a href="##">分类导航</a><br>
+								<a href="##">品牌导航</a>
+							</div>
+						</li>
+					</ul>	
+				</div>
+			</div>
+			<!-- 竖着的 -->
+			<div class="slidebar" id="slidebar">
+				<!-- 登录注册 -->
+				<div class="clearfix level-1">
+					<div class="level-dl" id="myzone">
+						<div class="level-dt">
+							<a href="##">
+								<s class="level-icon1"></s>
+							</a>
+						</div>
+						<div class="level-dd level-login-dd" style="right: 55px; display: none;">
+							<div class="level-dd-div">
+								<span class="level-close"></span>
+								<div class="user-img">
+									<img src="../img/index/userimg.jpg" width="79" height="78">
+								</div>
+								<div class="user-wel">
+									<span>您好，母婴之家用户，请</span>
+									<a href="##" class="userlogin">登录</a>&nbsp;&nbsp;
+									<a href="##">注册</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 购物车 -->
+				<div class="clearfix level-2">
+					<div class="level-dl" id="mycart">
+						<div class="level-dt">
+							<a href="##">
+								<b class="topline" style="margin-bottom:7px;"></b>
+								<s class="level-icon2"></s>
+								<span>购物车</span>
+								<em id="cartSlideNum">（0）</em>
+								<b class="topline" style="margin-top: 7px;"></b>
+							</a>
+						</div>
+						<div class="level-dd cart-slidebar" id="cart-slidebar" style="display: none; right: 55px;">
+							<div class="cart-level-dd">
+								<div class="cart-level-t"></div>
+								<div class="cart-level-line"></div>
+								<div id="slideBarCart-box"></div>
+								<textarea id="slideBarCart" style="display:none"></textarea>
+								<div id="mayLike">
+									<div class="cart-level-t"></div>
+									<div class="cart-level-tj-c" id="cart-level-tj-c">
+										<div class="scroll_track" style="height: 0px;">
+											<div class="scroll_thumb"></div>
+										</div>
+										<div class="scroll_viewport" id="scroll_viewport_like" style="height: 289px;">
+											<div class="scroll_overview" id="CartTjImg" style="top: 0px;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 分享客服等 -->
+				<div class="clearfix level-3">
+					<div class="level-dl" id="ewcode">
+						<div class="level-dt">
+							<a href="##">
+								<s class="level-icon3"></s>
+							</a>
+						</div>
+						<div class="level-dd-ewcode" style="display: none; right: 55px;"></div>
+					</div>
+					<div class="level-dl" id="mycollect">
+						<div class="level-dt">
+							<a href="##">
+								<s class="level-icon4"></s>
+							</a>
+						</div>
+						<div class="level-dd level-login-dd" style="right: 55px; display: none;">
+							<div class="level-dd-div">
+								<span class="level-close"></span>
+								<div class="user-img">
+									<img src="../img/index/userimg.jpg" width="79" height="78">
+								</div>
+								<div class="user-wel">
+									<span>您好，母婴之家用户，请</span>
+									<a href="##" class="userlogin">登录</a>&nbsp;&nbsp;
+									<a href="##">注册</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="level-dl level-cur" id="myservice">
+						<div class="level-dt">
+							<a href="##">
+								<s class="level-icon5"></s>
+								<span>在线客服</span>
+							</a>
+						</div>
+						<div class="level-dd" style="right: 55px; display: none;">
+							<div class="level-dd-div">
+								<a href="##" class="level-dd-a">客服</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 返回顶部 -->
+				<div class="clearfix level-4">
+					<div class="level-dl" id="gototop">
+						<div class="level-dt">
+							<a href="##">
+								<s class="level-icon6"></s>
+							</a>
+						</div>
+						<div class="level-dd" style="right: 55px; display: none;">
+							<div class="level-dd-div">
+								<a href="##" class="level-dd-a" id="level-3-gotop">返回顶部</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<!-- 第一部分 -->
+			<div class="mall-ensure">
+				<div class="mall-ensure-bd clearfix">
+					<div class="mall-ensure-bd-cen clearfix">
+						<ul class="clearfix">
+							<li>
+								<dl class="clearfix">
+									<dt class="clearfix">
+										<a href="##" style="color:#fff;">
+											<i class="sprite-icon icon-quality"></i>
+											<h2>品质</h2>
+										</a>
+									</dt>
+									<dd>全球化采购、正品保障</dd>
+								</dl>
+							</li>
+							<li>
+								<dl class="clearfix">
+									<dt class="clearfix">
+										<a href="##" style="color:#fff;">
+											<i class="sprite-icon icon-convenient"></i>
+											<h2>便捷</h2>
+										</a>
+									</dt>
+									<dd>一站式服务、送货上门</dd>
+								</dl>
+							</li>
+							<li>
+								<dl class="clearfix">
+									<dt class="clearfix">
+										<a href="##" style="color:#fff;">
+											<i class="sprite-icon icon-professional"></i>
+											<h2>专业</h2>
+										</a>
+									</dt>
+									<dd>顾问式客服、全年无休</dd>
+								</dl>
+							</li>
+							<li>
+								<dl class="clearfix">
+									<dt class="clearfix">
+										<a href="##" style="color:#fff;">
+											<i class="sprite-icon icon-sweet"></i>
+											<h2>贴心</h2>
+										</a>
+									</dt>
+									<dd>个性化导购、售后无忧</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 第二部分：导航部分 -->
+			<div class="mall-desc">
+				<div class="mall-desc-bd clearfix">
+					<div class="mall-desc-bd-cen clearfix">
+					<!-- 购物指南 -->
+						<dl class="h-guide">
+							<dt>
+								<i class="sprite-icon icon-guide"></i>
+								购物指南
+							</dt>
+							<dd>
+								<a href="##">购物流程</a>
+							</dd>
+							<dd>
+								<a href="##">常见问题</a>
+							</dd>
+							<dd>
+								<a href="##">优惠码(券)</a>
+							</dd>
+						</dl>
+					<!-- 支付方式 -->
+						<dl class="h-pay">
+							<dt>
+								<i class="sprite-icon icon-pay"></i>
+								支付方式
+							</dt>
+							<dd>
+								<a href="##">货到付款</a>
+							</dd>
+							<dd>
+								<a href="##">在线支付</a>
+							</dd>
+						</dl>
+					<!-- 配送方式 -->
+						<dl class="h-distribution">
+							<dt>
+								<i class="sprite-icon icon-distribution"></i>
+								配送方式
+							</dt>
+							<dd>
+								<a href="##">运费及时效</a>
+							</dd>
+							<dd>
+								<a href="##">品牌专场配送方式</a>
+							</dd>
+						</dl>
+					<!-- 售后服务 -->
+						<dl class="h-afterSales">
+							<dt>
+								<i class="sprite-icon icon-service"></i>
+								售后服务
+							</dt>
+							<dd>
+								<a href="##">退换货原则</a>
+							</dd>
+							<dd>
+								<a href="##">退换货流程</a>
+							</dd>
+							<dd>
+								<a href="##">退换货周期</a>
+							</dd>
+							<dd>
+								<a href="##">品牌专场售后政策</a>
+							</dd>
+						</dl>
+					<!-- 关于我们 -->
+						<dl class="h-aboutUs">
+							<dt>
+								<i class="sprite-icon icon-about"></i>
+								关于我们
+							</dt>
+							<dd>
+								<a href="##">企业理念</a>
+							</dd>
+							<dd>
+								<a href="##">网站合作</a>
+							</dd>
+							<dd>
+								<a href="##">人才招聘</a>
+							</dd>
+							<dd>
+								<a href="##">关于我们</a>
+							</dd>
+						</dl>
+					<!-- 联系我们 -->
+						<dl class="h-contactUs">
+							<dt>
+								<i class="sprite-icon icon-contactUs"></i>
+								联系我们
+							</dt>
+							<dd>
+								<a href="##">新浪微博</a>
+							</dd>
+							<dd>
+								<a href="##">联系客服</a>
+							</dd>
+							<dd>
+								<a href="##">我要投诉</a>
+							</dd>
+						</dl>
+					<!-- 微信二维码 -->
+						<div class="weixin-logo">
+							<div class="weixin-logo-img">
+								<img src="../img/index/weixin_code.jpg" title="母婴之家">
+							</div>
+							<div>
+								<span class="weixin-span">
+									<img src="../img/index/weixin_icon.jpg" title="母婴之家">
+								</span>
+								<span>扫一扫加微信</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 第三部分：页脚 -->
+			<div class="tfc_footer">
+				<div class="tfc_footer-bd">
+					<ul class="tfc_nav-footer clearfix">
+						<li>
+							<a href="##">首页</a>
+						</li>
+						|
+						<li>
+							<a href="##">公司简介</a>
+						</li>
+						|<li>
+							<a href="##">人才招聘</a>
+						</li>
+						|<li>
+							<a href="##">合作联系</a>
+						</li>
+						|<li>
+							<a href="##">企业理念</a>
+						</li>
+					</ul>
+					<div class="tfc_copyright">
+						<span>Copyright©2003 - 2016 muyingzhijia.com All Rights Reserved</span>
+						<span>沪ICP备09021709号</span>
+					</div>
+					<div style="padding:10px; text-align:center">
+						<a href="##" style="display: block; height: 38px; width: 100px; margin: 0 auto;">
+							<img src="../img/index/shanghai_industry.gif">
+						</a>
+						<a href="##" style=" margin-left:10px; display :inline-block;">
+							<img src="../img/index/ghs.png" style="display:inline-block">
+							<span style="color: #939393;vertical-align:5px;margin-left:5px;"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

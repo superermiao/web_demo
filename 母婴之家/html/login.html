@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>母婴之间—【登录】</title>
+		<link rel="stylesheet" href="../css/header.css" />
+		<link rel="stylesheet" href="../css/footer.css" />
+		<link rel="stylesheet" href="../css/login.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+	</head>
+	<body>
+	<!-- 头部 -->
+		<div id="header"></div>
+	<!-- logo -->
+		<div style="background-color:#fff;border-bottom:1px solid #d3d3d3;box-shadow:5px 9px 42px #e4e4e4;padding-bottom:10px;">
+			<div class="wrapper header">
+				<div class="logo">
+					<h1>
+						<a href="../html/index.html" title="母婴之家" target="_blank">
+							<img src="../img/login/logo.png" width="152px" height="73" alt="母婴之家">
+						</a>
+					</h1>
+				</div>
+			</div>
+		</div>
+		<div></div>
+	<!--登录注册-->
+		<div style="padding-top:55px;">
+			<div class="wrapper">
+				<div class="sign-content">
+					<!-- 登录注册选项卡 -->
+					<div class="sign-nav login-nav">
+		                <ul>
+		                    <li>
+		                    	<a href="register.html" id="regist_href" target="_self">
+		                    		<i></i>
+		                    		注册
+		                    	</a>
+		                    </li>
+		                    <li class="selected">
+		                    	<a href="login.html" target="_self">
+		                    	<i></i>
+		                    	登录
+		                    	</a>
+		                    </li>
+		                </ul>
+		            </div>
+					<!-- 表单部分 -->
+					<div class="sign-left login-right">
+						<form action method="post" name="login-form" id="login-form">
+							<input type="hidden" id="vh_foward_login_hd" value="-1">
+							<ul class="register-form login-form clear" style="height: auto;">
+								<!-- 用户名 -->
+								<li>
+									<label class="label" for="email">账户名：</label>
+									<div class="inputCont">
+										<input type="text" name="login-email" id="login-email" class="g-ipt" placeholder="请填入邮箱或手机号码" autocomplete="off" maxlength="100">
+										<!-- 错误提示 -->
+										<div id="login-emailTip" class="stickTips" style="display: none; background: transparent;">
+											<p class="noticeWrap noticeWrap-err">
+												<b class="ico-warning"></b>
+												<span class="txt-err"></span>
+											</p>
+										</div>
+									</div>
+									<i class="email-icon login-icon"></i>
+								</li>
+								<!-- 密码 -->
+								<li>
+									<label class="label" for="email">密码：</label>
+	                            	<div class="inputCont">
+	                                	<input type="password" id="password" name="password" class="txt" placeholder="请填入密码" />
+	                                	<!-- 错误提示 -->
+	                                	<div id="passwordTip" class="onError" style="display: none; background: transparent;">
+		                                	<p class="noticeWrap noticeWrap-err">
+		                                		<b class="ico-warning"></b>
+		                                		<span class="txt-err">密码长度为6-20位字符</span>
+		                                	</p>
+	                                	</div>
+	                            	</div>
+	                            	<i class="password-icon login-icon"></i>
+								</li>
+								<!-- 验证码 -->
+								<li id="VerificationCode" class="show">
+		                            <label class="label" for="code">验证码：</label>
+		                            <div class="inputCont">
+		                                <div class="codeWrap">
+		                                    <input id="hdnRegCode" type="hidden" />
+		                                    <input type="text" id="get-code" name="code" class="codetxt" maxlength="6" style="float: left" autocomplete="off" />
+		                                    <img id="regCode" class="changeCode" src="http://www.muyingzhijia.com/validate/imageRegisterCode.aspx?id="
+		                                        width="80" height="21" title="看不清楚，点击换一张" alt="看不清楚，点击换一张" align="absmiddle" />
+		                                    <p>看不清？<a class="changeCode">换一张</a></p>
+		                                </div>
+		                                <!-- 错误提示 -->
+		                                <div id="get-codeTip" class="stickTips" style="display: none; background: transparent;">
+		                                	<p class="noticeWrap noticeWrap-err">
+			                                	<b class="ico-warning"></b>
+			                                	<span class="txt-err">图片验证码格式错误</span>
+		                                	</p>
+		                                </div>
+		                            </div>
+		                        </li>
+		                        <!-- 30天免登陆 -->
+								<li style="min-height: 20px">
+		                            <label class="label">&nbsp;</label>
+		                            <div class="inputCont">
+		                                <div class="argWrap">
+		                                    <label>
+		                                       <input type="checkbox" id="remember" name="remember" class="checkbox">
+		                                        记住我(30天内免登录)
+		                                    </label>
+		                                    <a href="##" target="_blank" class="forgetpassword">忘记密码？</a>
+		                                </div>
+		                            </div>
+		                        </li>
+								<!-- 登录按钮 -->
+								<li class="submit-area">
+		                            <label class="label">&nbsp;</label>
+		                            <div class="inputCont">
+		                                <div class="argWrap">
+		                                    <input type="button" id="login-btn" name="login-btn" class="submit-signin" value="" />
+		                                </div>
+		                                <br />
+		                                <br />
+		                                <div class="onError" id="errTip" style="overflow: hidden;display: none;">
+		                                    <p class="noticeWrap noticeWrap-err">
+		                                        <b class="ico-warning"></b>
+		                                        <span class="txt-err"></span>
+		                                    </p>
+		                                </div>
+		                            </div>
+		                        </li>
+							</ul>
+						</form>
+						<div class="otherwise">
+							<div class="sign-title-right">使用合作网站账号登录母婴之家：</div>
+							<ul class="sign-right-list">
+								<li class="othercount">
+									<a href="##" class="weibo" id="J_weibo" title="微博账号登录"></a>
+								</li>
+								<li class="othercount">
+									<a href="##" class="alipay" id="J_alipay" title="支付宝账号登录"></a>
+								</li>
+								<li class="othercount">
+									<a href="##" class="qq" id="J_qq"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 二维码部分 -->
+					<div class="sign-right login-left">
+						<a href="##" target="_blank">
+	                    	<img src="../img/login/sign.jpg" alt="下载注册" title="下载注册">
+	                    </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- footer -->
+		<div class="tfc_footer" style="background-color:#fff;margin-top:40px;padding-top:10px;border-top:1px solid #dedede;">
+			<div class="tfc_footer-bd">
+				<ul class="tfc_nav-footer clearfix">
+					<li>
+						<a href="##">首页</a>
+					</li>
+					|
+					<li>
+						<a href="##">公司简介</a>
+					</li>
+					|<li>
+						<a href="##">人才招聘</a>
+					</li>
+					|<li>
+						<a href="##">合作联系</a>
+					</li>
+					|<li>
+						<a href="##">企业理念</a>
+					</li>
+				</ul>
+				<div class="tfc_copyright">
+					<span>Copyright©2003 - 2016 muyingzhijia.com All Rights Reserved</span>
+					<span>沪ICP备09021709号</span>
+				</div>
+				<div style="padding:10px; text-align:center">
+					<a href="##" style="display: block; height: 38px; width: 100px; margin: 0 auto;">
+						<img src="../img/index/shanghai_industry.gif">
+					</a>
+					<a href="##" style=" margin-left:10px; display :inline-block;">
+						<span style="color: #939393;vertical-align:5px;margin-left:5px;">沪ICP备09021709号</span>
+						<img src="../img/index/ghs.png" style="display:inline-block">
+						<span style="color: #939393;vertical-align:5px;margin-left:5px;">沪公网安备 31010402000751号</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	<!-- script -->
+		<script type="text/javascript" src="../js/jquery.min.js" ></script>
+		<script type="text/javascript">
+			$.ajax({
+			 	type: "get",
+			 	async:false,
+			 	url: "../html/header.html",      
+			 	success: function(json){
+			 		$("#header").html(json);
+			 	},
+			 	error: function(){
+			 	    console.log('header fail');
+			 	}
+			});
+		</script>
+		<script type="text/javascript" src="../js/login.js" ></script>
+		<script type="text/javascript" src="../js/jquery.cookie.js" ></script>
+
+	</body>
+</html>

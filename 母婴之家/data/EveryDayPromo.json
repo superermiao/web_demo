@@ -1,0 +1,50 @@
+{
+	"g1":{
+		"img":"../img/index/goods/g1.jpg",
+		"title":"德国STM 变形金刚 汽车安全座椅（冰雪蓝）9个月-12周岁",
+		"price":"￥1778",
+		"sale":"665"
+	},
+	"g2":{
+		"img":"../img/index/goods/g2.jpg",
+		"title":"小硕士榉木高端欧式婴儿床实木两档可调带短护栏 SK-942",
+		"price":"￥788",
+		"sale":"66"
+	},
+	"g3":{
+		"img":"../img/index/goods/g3.jpg",
+		"title":"日本贝亲婴儿喂食勺2只装",
+		"price":"￥35",
+		"sale":"441"
+	},
+	"g4":{
+		"img":"../img/index/goods/g4.jpg",
+		"title":"迪士尼宝宝15QC卡通大联盟梭织床垫125*65深蓝",
+		"price":"￥82",
+		"sale":"649"
+	},
+	"g5":{
+		"img":"../img/index/goods/g5.jpg",
+		"title":"雅培菁智2段较大婴儿和幼儿配方奶粉900g",
+		"price":"￥268",
+		"sale":"396"
+	},
+	"g6":{
+		"img":"../img/index/goods/g6.jpg",
+		"title":"帮宝适超薄干爽系列电子商务渠道纸尿裤彩箱装XL128片",
+		"price":"￥199",
+		"sale":"649"
+	},
+	"g7":{
+		"img":"../img/index/goods/g7.jpg",
+		"title":"UNICAL优你钙柠檬味固体饮料（0-2岁）萌萌系列",
+		"price":"￥116",
+		"sale":"463"
+	},
+	"g8":{
+		"img":"../img/index/goods/g8.jpg",
+		"title":"日本犬印 透气收胯提臀骨盆矫正带 盆骨带HB8149L黑色M",
+		"price":"￥388",
+		"sale":"974"
+	}
+}	

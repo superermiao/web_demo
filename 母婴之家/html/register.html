@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>母婴之家-【注册】</title>
+		<link rel="stylesheet" href="../css/header.css" />
+		<link rel="stylesheet" href="../css/footer.css" />
+		<link rel="stylesheet" href="../css/register.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+	</head>
+	<body>
+	<!-- 头部 -->
+		<div id="header"></div>
+	<!-- logo -->
+		<div style="background-color:#fff;border-bottom:1px solid #d3d3d3;box-shadow:5px 9px 42px #e4e4e4;padding-bottom:10px;">
+			<div class="wrapper header">
+				<div class="logo">
+					<h1>
+						<a href="../html/index.html" title="母婴之家" target="_blank">
+							<img src="../img/login/logo.png" width="152px" height="73" alt="母婴之家">
+						</a>
+					</h1>
+				</div>
+			</div>
+		</div>
+		<div></div>
+	<!--登录注册-->
+		<div style="padding-top:55px;">
+			<div class="wrapper">
+				<div class="sign-content register-form-height">
+					<!-- 登录注册选项卡 -->
+					<div class="sign-nav">
+		                <ul>
+		                    <li class="selected">
+		                    	<a href="register.html" id="regist_href" target="_self">
+		                    		<i></i>
+		                    		注册
+		                    	</a>
+		                    </li>
+		                    <li>
+		                    	<a href="login.html" target="_self">
+		                    	<i></i>
+		                    	登录
+		                    	</a>
+		                    </li>
+		                </ul>
+		            </div>
+					<!-- 表单部分 -->
+					<div class="sign-left">
+						<form name="form" id="reg-form">
+							<ul class="register-form clear" style="height: auto;">
+								<!-- 手机号 -->
+								<li>
+	                                <label class="label" for="email">
+	                                    手机号：
+	                                </label>
+	                                <div class="inputCont">
+	                                    <input type="text" id="email" name="email" class="g-ipt" placeholder="请填入手机号" maxlength="50">
+	                                    <div id="emailTip" class="stickTips" style="display: none; background: transparent;">
+	                                    	<p class="noticeWrap noticeWrap-err">
+		                                    	<b class="ico-warning"></b>
+		                                    	<span class="txt-err">手机格式不对，请重新输入！</span>
+	                                    	</p>
+	                                    </div>
+	                                    <i class="email-icon"></i>
+	                                </div>
+	                            </li>
+								<!-- 设置密码 -->
+								<li>
+	                                <label class="label" for="email">
+	                                    请设置密码：
+	                                </label>
+	                                <div class="inputCont">
+	                                    <input type="password" id="password1" name="password1" class="g-ipt" placeholder="请填入密码" maxlength="20">
+	                                    <div id="password1Tip" class="stickTips" style="display: none; background: transparent;">
+	                                    	<p class="noticeWrap noticeWrap-err">
+		                                    	<b class="ico-warning"></b>
+		                                    	<span class="txt-err">密码长度限制为6-20位字符</span>
+	                                    	</p>
+	                                    </div>
+	                                    <i class="password-icon"></i>
+	                                </div>
+	                            </li>
+								<!-- 确认密码 -->
+								<li>
+	                                <label class="label" for="email">
+	                                    请确认密码：
+	                                </label>
+	                                <div class="inputCont">
+	                                    <input type="password" id="password2" name="password2" class="g-ipt" placeholder="请再次填写密码" maxlength="20" onpaste="return false">
+	                                    <div id="password2Tip" class="stickTips" style="display: none; background: transparent;">
+	                                    	<p class="noticeWrap noticeWrap-err">
+		                                    	<b class="ico-warning"></b>
+		                                    	<span class="txt-err">重复密码不能为空，请确认</span>
+	                                    	</p>
+	                                    </div>
+	                                    <i class="password-icon"></i>
+	                                </div>
+	                            </li>
+		                        <!-- 验证码 -->
+								<li id="check-code">
+		                            <label class="label" for="code">
+		                                验证码：
+		                            </label>
+		                            <div class="inputCont">
+		                                <div class="codeWrap">
+		                                    <input id="hdnRegCode" type="hidden">
+		                                    <input type="text" id="get-code" name="code" class="codetxt" maxlength="6" style="float: left" autocomplete="off">
+		                                    <img id="regCode" class="changeCode" src="http://www.muyingzhijia.com/validate/imageRegisterCode.aspx" width="80" height="21" title="看不清楚，点击换一张" alt="看不清楚，点击换一张" align="absmiddle">
+		                                    <p>
+		                                        看不清？<a class="changeCode">换一张</a>
+		                                    </p>
+		                                </div>
+		                                <div id="get-codeTip" class="stickTips" style="display: none;">
+		                                	 <p class="noticeWrap noticeWrap-err">
+		                                    	<b class="ico-warning"></b>
+		                                    	<span class="txt-err">验证码不能为空，请确认</span>
+	                                    	</p>
+		                                </div>
+		                            </div>
+		                        </li>
+								<!-- 短信验证 -->
+								<li id="mobile-code">
+		                            <label class="label" for="code">
+		                                短信验证码：
+		                            </label>
+		                            <div class="inputCont">
+		                                <div class="codeWrap">
+		                                    <input id="Hidden1" type="hidden">
+		                                    <input type="text" id="message" name="message" class="codetxt" maxlength="6" style="float: left" autocomplete="off">
+		                                    <input type="button" class="get-mobile-code" id="get-mobile-code" data-vartype="2" disabled="disabled">
+		                                </div>
+		                                <div id="messageTip" style="display: none;">
+		                                	<p class="noticeWrap noticeWrap-err">
+		                                    	<b class="ico-warning"></b>
+		                                    	<span class="txt-err">短信验证不能为空，请确认</span>
+	                                    	</p>
+		                                </div>
+		                                <div id="mobile-code-message" class="mobile-code-message hide"></div>
+		                            </div>
+		                        </li>
+		                        <!-- 同意协议 -->
+		                        <li style="min-height: 20px;">
+	                                <label class="label">
+	                                    &nbsp;
+	                                </label>
+	                                <div class="inputCont">
+	                                    <div class="argWrap">
+	                                        <input type="checkbox" id="agreement" name="agreement" class="checkbox" checked="">
+	                                        <label for="agreement">
+	                                            <p class="agreement-text">
+	                                            	阅读并同意
+		                                            <a href="##" target="_blank">
+		                                            	"母婴之家网站用户协议"
+		                                            </a>
+	                                            </p>
+	                                        </label>
+	                                    </div>
+	                                    <div id="agreementTip" class="stickTips" style="display: none; background: transparent;">
+	                                    	<p class="noticeWrap noticeWrap-err">
+		                                    	<b class="ico-warning"></b>
+		                                    	<span class="txt-err">您还没有同意用户协议</span>
+	                                    	</p>
+	                                    </div>
+	                                </div>
+	                            </li>
+	                            <!-- 提交注册按钮 -->
+	                            <li class="submit-area">
+	                                <label class="label">
+	                                    &nbsp;
+	                                </label>
+	                                <div class="inputCont">
+	                                    <div class="argWrap">
+	                                        <input type="button" id="reg_btn" name="reg_btn" class="submit-signup" value="">
+	                                    </div>
+	                                    <div class="onError" id="errTip">
+	                                        <p class="noticeWrap noticeWrap-err">
+	                                            <b class="ico-warning"></b>
+	                                            <span class="txt-err">请求超时</span>
+	                                        </p>
+	                                    </div>
+	                                </div>
+	                            </li>
+							</ul>
+							<div class="otherwise">
+								<div class="sign-title-right">使用合作网站账号登录母婴之家：</div>
+								<ul class="sign-right-list">
+									<li class="othercount">
+										<a href="##" class="weibo" id="J_weibo" title="微博账号登录"></a>
+									</li>
+									<li class="othercount">
+										<a href="##" class="alipay" id="J_alipay" title="支付宝账号登录"></a>
+									</li>
+									<li class="othercount">
+										<a href="##" class="qq" id="J_qq"></a>
+									</li>
+								</ul>
+							</div>
+						</form>
+					</div>
+					<!-- 二维码部分 -->
+					<div class="sign-right">
+                        <a href="##" target="_blank">
+                 			<img src="../img/register/register.jpg" alt="新人注册APP三重礼" title="新人注册APP三重礼">
+                 		</a>
+                    </div>
+				</div>
+			</div>
+		</div>
+	<!-- footer -->
+		<div class="tfc_footer" style="background-color:#fff;margin-top:40px;padding-top:10px;border-top:1px solid #dedede;">
+			<div class="tfc_footer-bd">
+				<ul class="tfc_nav-footer clearfix">
+					<li>
+						<a href="##">首页</a>
+					</li>
+					|
+					<li>
+						<a href="##">公司简介</a>
+					</li>
+					|<li>
+						<a href="##">人才招聘</a>
+					</li>
+					|<li>
+						<a href="##">合作联系</a>
+					</li>
+					|<li>
+						<a href="##">企业理念</a>
+					</li>
+				</ul>
+				<div class="tfc_copyright">
+					<span>Copyright©2003 - 2016 muyingzhijia.com All Rights Reserved</span>
+					<span>沪ICP备09021709号</span>
+				</div>
+				<div style="padding:10px; text-align:center">
+					<a href="##" style="display: block; height: 38px; width: 100px; margin: 0 auto;">
+						<img src="../img/index/shanghai_industry.gif">
+					</a>
+					<a href="##" style=" margin-left:10px; display :inline-block;">
+						<span style="color: #939393;vertical-align:5px;margin-left:5px;">沪ICP备09021709号</span>
+						<img src="../img/index/ghs.png" style="display:inline-block">
+						<span style="color: #939393;vertical-align:5px;margin-left:5px;">沪公网安备 31010402000751号</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	<!-- script -->
+		<script type="text/javascript" src="../js/jquery.min.js" ></script>
+		<script type="text/javascript">
+			$.ajax({
+			 	type: "get",
+			 	async:false,
+			 	url: "../html/header.html",      
+			 	success: function(json){
+			 		$("#header").html(json);
+			 	},
+			 	error: function(){
+			 	    console.log('header fail');
+			 	}
+			});
+		</script>
+		<script type="text/javascript" src="../js/register.js" ></script>
+		<script type="text/javascript" src="../js/jquery.cookie.js" ></script>		
+	</body>
+</html>

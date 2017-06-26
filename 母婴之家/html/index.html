@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>母婴之家-让宝宝过得更好</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+	</head>
+	<body>
+<!-- ——————————————————————头部广告 ————————————————————————————————————-->
+		<div id="ad_top">
+			<a href="##"><img src="../img/index/ad_top1.jpg"/></a>
+			<span><img src="../img/index/ad_close.jpg"/></span>
+		</div>
+<!-- —————————————————————— 头部导航————————————————————————————————————-->
+	<div id="site-nav" class="site-nav">
+		<!-- 横着的 -->
+		<div id="sn-bd" class="sn-bd">
+			<div class="sn-container clearfix">
+				<ul class="header-quick-menu clearfix fl">
+					<li class="curpage"><a href="##">母婴之家</a></li>
+					<li><a href="##">母婴海淘</a></li>
+					<li class="phonebox" id="phonebox">
+						<i class="sprite-icon icon-mobile-phone"></i>
+						<a href="##">手机版</a>
+						<div class="phonehidediv" id="phonehidediv" style="display: none;"></div>
+					</li>
+				</ul>
+				<ul class="ssn-quick-menu clearfix fr">
+					<li>
+						<span>欢迎来到母婴之家！</span>
+						<a href="##" id="loginBtn" target="_blank"></a>
+						<a href="##" id="regBtn" target="_blank"></a>
+					</li>
+					<li class="ssn-separator"></li>
+					<!-- 二级导航：我的订单 -->
+					<li class="ssn-home" id="ssn-home">
+						<div class="ssn-hover-div">
+							<a href="##" target="_blank">我的订单</a>
+							<b></b>
+						</div>
+						<div id="Theader_down01" class="Theader_top01_divON" style="display: none;">
+							<a href="##">我的家</a><br>
+							<a href="##">我的提问</a><br>
+							<a href="##">我的评论</a><br>
+							<a href="##" target="_blank">我的收藏</a><br>
+							<a href="##">我的幸运星</a>
+						</div>
+					</li>
+					<li class="ssn-separator"></li>
+					<!-- 二级导航：客户服务 -->
+					<li class="ssn-mybrand" id="ssn-mybrand">
+						<div class="ssn-hover-div">
+							<a href="##">客户服务</a>
+							<b></b>
+						</div>
+						<div id="Theader_down02" class="Theader_top01_divON" style="display: none;">
+							<a href="##">在线客服</a><br>
+							<a href="##">帮助中心</a>
+						</div>
+					</li>
+					<li class="ssn-separator"></li>
+					<li><a href="##">商务合作</a></li>
+					<li class="ssn-separator"></li>
+					<!-- 二级导航：客户服务 -->
+					<li class="ssn-sitemap" id="ssn-sitemap">
+						<div class="ssn-hover-div">
+							<a href="##">网站导航</a>
+							<b></b>
+						</div>
+						<div id="Theader_down03" class="Theader_top01_divON" style="display: none;">
+							<a href="##">分类导航</a><br>
+							<a href="##">品牌导航</a>
+						</div>
+					</li>
+				</ul>	
+			</div>
+		</div>
+		<!-- 竖着的 -->
+		<div class="slidebar" id="slidebar">
+			<!-- 登录注册 -->
+			<div class="clearfix level-1">
+				<div class="level-dl" id="myzone">
+					<div class="level-dt">
+						<a href="##">
+							<s class="level-icon1"></s>
+						</a>
+					</div>
+					<div class="level-dd level-login-dd" style="right: 55px; display: none;">
+						<div class="level-dd-div">
+							<span class="level-close"></span>
+							<div class="user-img">
+								<img src="../img/index/userimg.jpg" width="79" height="78">
+							</div>
+							<div class="user-wel">
+								<span>您好，母婴之家用户，请</span>
+								<a href="##" class="userlogin">登录</a>&nbsp;&nbsp;
+								<a href="##" class="usersign">注册</a>
+							</div>
+							<div class="user-order" style="display: none;">
+								<a href="##">
+									<img src="../img/index/user-order.jpg">
+								</a>
+								<a href="##">我的订单</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 购物车 -->
+			<div class="clearfix level-2">
+				<div class="level-dl" id="mycart">
+					<div class="level-dt">
+						<a href="##">
+							<b class="topline" style="margin-bottom:7px;"></b>
+							<s class="level-icon2"></s>
+							<span>购物车</span>
+							<em id="cartSlideNum">（0）</em>
+							<b class="topline" style="margin-top: 7px;"></b>
+						</a>
+					</div>
+					<div class="level-dd cart-slidebar" id="cart-slidebar" style="display: none; right: 55px;">
+						<div class="cart-level-dd">
+							<div class="cart-level-t"></div>
+							<div class="cart-level-line"></div>
+							<div id="slideBarCart-box"></div>
+							<textarea id="slideBarCart" style="display:none"></textarea>
+							<div id="mayLike">
+								<div class="cart-level-t"></div>
+								<div class="cart-level-tj-c" id="cart-level-tj-c">
+									<div class="scroll_track" style="height: 0px;">
+										<div class="scroll_thumb"></div>
+									</div>
+									<div class="scroll_viewport" id="scroll_viewport_like" style="height: 289px;">
+										<div class="scroll_overview" id="CartTjImg" style="top: 0px;"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 分享客服等 -->
+			<div class="clearfix level-3">
+				<div class="level-dl" id="ewcode">
+					<div class="level-dt">
+						<a href="##">
+							<s class="level-icon3"></s>
+						</a>
+					</div>
+					<div class="level-dd-ewcode" style="display: none; right: 55px;"></div>
+				</div>
+				<div class="level-dl" id="mycollect">
+					<div class="level-dt">
+						<a href="##">
+							<s class="level-icon4"></s>
+						</a>
+					</div>
+					<div class="level-dd level-login-dd" style="right: 55px; display: none;">
+						<div class="level-dd-div">
+							<span class="level-close"></span>
+							<div class="user-img">
+								<img src="../img/index/userimg.jpg" width="79" height="78">
+							</div>
+							<div class="user-wel">
+								<span>您好，母婴之家用户，请</span>
+								<a href="##" class="userlogin">登录</a>&nbsp;&nbsp;
+								<a href="##" class="usersign">注册</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="level-dl level-cur" id="myservice">
+					<div class="level-dt">
+						<a href="##">
+							<s class="level-icon5"></s>
+							<span>在线客服</span>
+						</a>
+					</div>
+					<div class="level-dd" style="right: 55px; display: none;">
+						<div class="level-dd-div">
+							<a href="##" class="level-dd-a">客服</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 返回顶部 -->
+			<div class="clearfix level-4">
+				<div class="level-dl" id="gototop">
+					<div class="level-dt">
+						<a href="##">
+							<s class="level-icon6"></s>
+						</a>
+					</div>
+					<div class="level-dd" style="right: 55px; display: none;">
+						<div class="level-dd-div">
+							<a href="##" class="level-dd-a" id="level-3-gotop">返回顶部</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- ——————#ui-fixed-top （滚动一定高度出现的）吸顶条 ——————————————————-->
+	<div class="ui-fixed-top" id="ui-fixed-top">
+		<div class="ui-fixed-box">
+			<a href="##" class="ui-fixLogo"></a>
+			<ul class="ui-nav-bar-list">
+				<li class="now"><a href="##">首页</a></li>
+				<li class="haiT-nav"><a href="##">幸运星期一</a></li>
+				<li class="haiT-nav haschild">
+					<a href="##">直邮专区</a>
+					<ul class="haiT-child">
+						<li>
+							<a href="##">欧洲直邮</a>
+						</li>
+					</ul>
+				</li>
+				<li class="haiT-nav"><a href="##">品牌专区</a></li>
+				<li class="haiT-nav"><a href="##">会员俱乐部</a></li>
+			</ul>
+			<div class="fix-mallSearch-input">
+				<div id="mallSearch" class="mallSearch clearfix">
+					<div class="mallSearch-form clearfix">
+						<form method="get" target="_top">
+							<fieldset>
+								<legend>母婴之家搜索</legend>
+								<div class="mallSearch-input">
+									<label for="txSearchCondition" style="visibility: visible; display: none;">搜索 母婴之家 商品/品牌</label>
+									<div class="s-combobox" id="s-combobox">
+										<div class="s-combobox-input-wrap">
+											<input type="text" id="txSearchCondition" class="s-combobox-input" title="请输入搜索文字" maxlength="50" placeholder="搜索 母婴之家 商品/品牌" autocomplete="off" value />
+										</div>
+										
+										<!-- <label for="txSearchCondition" style="visibility: visible; display: block;">搜索 母婴之家 商品/品牌</label> -->
+										<div class="clear"></div>
+										<ul class="keyword-search" id="keyword_list" style="display:none;"></ul>
+									</div>
+									<button type="button" id="btnSearch">
+										<i class="iconimg-searchbtn"></i>
+									</button>
+									<div class="clear"></div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- ———————————————— .ui-top-bar （包含logo的） ———————————————————————-->
+	<div class="ui-top-bar">
+		<!-- logo部分 -->
+		<div class="ui-logo">
+			<a href="##" target="_blank">
+				<img src="../img/index/logo.png" alt="母婴之家首页">
+			</a>
+		</div>
+		<!-- 正 荐 专 -->
+		<div class="ui-reason">
+			<a href="##">
+				<div class="zheng"></div>
+				<p>全球精选正品</p>
+			</a>
+			<a href="##">
+				<div class="jian"></div>
+				<p>白领妈妈推荐</p>
+			</a>
+			<a href="##">
+				<div class="qi"></div>
+				<p>专注母婴13年</p>
+			</a>
+		</div>
+		<!-- 搜索框部分 -->
+		<div class="fr" id="header-extra">
+			<div id="mallSearch" class="mallSearch clearfix">
+				<div class="mallSearch-form clearfix">
+					<form method="get" target="_top">
+						<fieldset>
+							<legend>母婴之家搜索</legend>
+							<div class="mallSearch-input">
+								<label for="txSearchCondition" style="visibility: visible; display: none;">搜索 母婴之家 商品/品牌</label>
+								<div class="s-combobox" id="s-combobox">
+									<div class="s-combobox-input-wrap">
+										<input type="text" id="txSearchCondition" class="s-combobox-input" title="请输入搜索文字" maxlength="50" autocomplete="off" value/>
+									</div>
+									<!-- 提示文本 placeholder="搜索 母婴之家 商品/品牌" -->
+									<label for="txSearchCondition" style="visibility: visible; display: block;">搜索 母婴之家 商品/品牌</label>
+									<div class="clear"></div>
+									<ul class="keyword-search" id="keyword_list" style="display:none;"></ul>
+								</div>
+								<button type="button" id="btnSearch">
+									<i class="iconimg-searchbtn"></i>
+								</button>
+								<div class="clear"></div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				<!-- 热门搜索 -->
+				<ul class="hot-query clearfix" style="width: 510px;">
+					<li>热门搜索：&nbsp;&nbsp;</li>
+					<li class="hot-query-highlight">
+						<a href="##">热门1</a>&nbsp;&nbsp;
+					</li>
+					<li class>
+						<a href="##">热门1</a>&nbsp;&nbsp;
+					</li>
+					<li class>
+						<a href="##">热门1</a>&nbsp;&nbsp;
+					</li>
+					<li class>
+						<a href="##">热门1</a>&nbsp;&nbsp;
+					</li>
+					<li class>
+						<a href="##">热门1</a>&nbsp;&nbsp;
+					</li>
+					<li class>
+						<a href="##">热门1</a>&nbsp;&nbsp;
+					</li>
+					<li class>
+						<a href="##">热门1</a>&nbsp;&nbsp;
+					</li>
+					<li class>
+						<a href="##">热门1</a>&nbsp;&nbsp;
+					</li>
+				</ul>
+			</div>
+			<span class="clear"></span>
+		</div>
+	</div>
+<!-- ——————————————————————.ui-nav (导航)———————————————————————————————-->
+	<div class="ui-nav">
+		<div class="ui-nav-bar">
+			<!-- 全部商品分类 -->
+			<div class="ui-silder-nav" id="ui-silder-nav">
+				<a href="##" class="ui-silder-all navStats">
+				全部商品分类
+					<i></i>
+				</a>
+				<!-- 隐藏的二级导航 -->
+				<div class="ui-category" style="display: none;">
+					<ul>
+					<!-- 二级列表1 -->
+						<li class="ui-category-list">
+							<a href="##" class="ui-category-second">
+								<i class="ui-cate-icon ui-cate-icon1"></i>
+								<i class="ui-cate-arr"></i>
+								妈妈专区
+							</a>
+							<!-- 三级导航 -->
+							<div class="ui-category-third">
+								<!-- 左边文字区域 -->
+								<div class="ui-cate-left" id="ui-cate-left-1">
+									<div class="ui-cate-left-box">
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+									</div>
+								</div>
+								<!-- 右边图标区域 -->
+								<div class="ui-cate-right" id="ui-cate-right-1">
+									<div class="ui-brand-list">
+										<a href="##">
+											<img src="../img/index/nav/1/1.jpg">
+										</a>
+									</div>
+									<div class="ui-brand-items"></div>
+								</div>
+							</div>
+						</li>
+					<!-- 二级列表2 -->
+						<li class="ui-category-list">
+							<a href="##" class="ui-category-second">
+							</a>
+							<div class="ui-category-third">
+								<div class="ui-cate-left" id="ui-cate-left-2">
+									<div class="ui-cate-left-box">
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+									</div>
+								</div>
+								<div class="ui-cate-right" id="ui-cate-right-2"></div>
+							</div>
+						</li>
+					<!-- 二级列表3 -->
+						<li class="ui-category-list">
+							<a href="##" class="ui-category-second">
+							</a>
+							<div class="ui-category-third">
+								<div class="ui-cate-left" id="ui-cate-left-3">
+									<div class="ui-cate-left-box">
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<!-- <dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl> -->
+									</div>
+								</div>
+								<div class="ui-cate-right" id="ui-cate-right-3"></div>
+							</div>
+						</li>
+					<!-- 二级列表4 -->
+						<li class="ui-category-list">
+							<a href="##" class="ui-category-second">
+							</a>
+							<div class="ui-category-third">
+								<div class="ui-cate-left" id="ui-cate-left-4">
+									<div class="ui-cate-left-box">
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<!-- <dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl> -->
+									</div>
+								</div>
+								<div class="ui-cate-right" id="ui-cate-right-4"></div>
+							</div>
+						</li>
+					<!-- 二级列表5 -->
+						<li class="ui-category-list">
+							<a href="##" class="ui-category-second">
+							</a>
+							<div class="ui-category-third">
+								<div class="ui-cate-left" id="ui-cate-left-5">
+									<div class="ui-cate-left-box">
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<!-- <dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl> -->
+									</div>
+								</div>
+								<div class="ui-cate-right" id="ui-cate-right-5"></div>
+							</div>
+						</li>
+					<!-- 二级列表6 -->
+						<li class="ui-category-list">
+							<a href="##" class="ui-category-second">
+							</a>
+							<div class="ui-category-third">
+								<div class="ui-cate-left" id="ui-cate-left-6">
+									<div class="ui-cate-left-box">
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<!-- <dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl> -->
+									</div>
+								</div>
+								<div class="ui-cate-right" id="ui-cate-right-6"></div>
+							</div>
+						</li>
+					<!-- 二级列表7 -->
+						<li class="ui-category-list">
+							<a href="##" class="ui-category-second">
+							</a>
+							<div class="ui-category-third">
+								<div class="ui-cate-left" id="ui-cate-left-7">
+									<div class="ui-cate-left-box">
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<!-- <dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl> -->
+									</div>
+								</div>
+								<div class="ui-cate-right" id="ui-cate-right-7"></div>
+							</div>
+						</li>
+					<!-- 二级列表8 -->
+						<li class="ui-category-list">
+							<a href="##" class="ui-category-second">
+							</a>
+							<div class="ui-category-third">
+								<div class="ui-cate-left" id="ui-cate-left-8">
+									<div class="ui-cate-left-box">
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+									</div>
+								</div>
+								<div class="ui-cate-right" id="ui-cate-right-8"></div>
+							</div>
+						</li>
+					<!-- 二级列表9 -->
+						<li class="ui-category-list">
+							<a href="##" class="ui-category-second">
+							</a>
+							<div class="ui-category-third">
+								<div class="ui-cate-left" id="ui-cate-left-9">
+									<div class="ui-cate-left-box">
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<!-- <dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl>
+										<dl>
+											<dt><a href="##"></a></dt>
+											<dd></dd>
+										</dl> -->
+									</div>
+								</div>
+								<div class="ui-cate-right" id="ui-cate-right-9"></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<span></span>
+			</div>
+			<!-- 首页等 -->
+			<ul class="ui-nav-bar-list">
+				<li class="now"><a href="##">首页</a></li>
+				<li class="haiT-nav"><a href="##">幸运星期一</a></li>
+				<li class="haiT-nav haschild">
+					<a href="##">直邮专区</a>
+					<ul class="haiT-child">
+						<li>
+							<a href="##">欧洲直邮</a>
+						</li>
+					</ul>
+				</li>
+				<li class="haiT-nav"><a href="##">品牌专区</a></li>
+				<li class="haiT-nav"><a href="##">会员俱乐部</a></li>
+			</ul>
+			<!-- 广播新闻 -->
+			<div class="ui-new" id="ui-new">
+				<span></span>
+				<ul>
+					<li>
+						<a href="##">谨防诈骗的安全提醒</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="ui-nav-line"></div>
+	</div>
+<!-- ———————————————————outerBox 下面整个展示部分————————————————————————-->
+	<!-- outerbox -->
+	<div class="outerbox">
+		<!-- container -->
+		<div class="container">
+			<!-- 大轮播图indexAutoPlayAreaBox -->
+			<div id="indexAutoPlayAreaBox">
+				<div class="focus_banner" id="J_slideBanner_wrap">
+					<div class="slideBox ck-slide" id="slideBox">
+						<ul class="imgArea ck-slide-wrapper" id="slideArea">
+							<li style="position: relative;">
+								<a href="##" class="newstats">
+									<img src="../img/index/slideBox/1.jpg" class="main-banner">
+								</a>
+							</li>
+							<li style="position: relative;">
+								<a href="##">
+									<img src="../img/index/slideBox/2.jpg" class="main-banner">
+								</a>
+							</li>
+							<li style="position: relative;">
+								<a href="##" class="newstats">
+									<img src="../img/index/slideBox/3.jpg" class="main-banner">
+								</a>
+							</li>
+							<li style="position: relative;">
+								<a href="##" class="newstats">
+									<img src="../img/index/slideBox/4.jpg" class="main-banner">
+								</a>
+							</li>
+							<li style="position: relative;">
+								<a href="##" class="newstats">
+									<img src="../img/index/slideBox/5.jpg" class="main-banner">
+								</a>
+							</li>
+							<li style="position: relative;">
+								<a href="##" class="newstats">
+									<img src="../img/index/slideBox/6.jpg" class="main-banner">
+								</a>
+							</li>
+							
+						</ul>
+						<div id="slide_btnArea" class="btnArea" style="display: block; width: 138px; margin-left: -74px;">
+							<span class="bannercur"></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 当日抢购，小轮播图class="ui-sale" id="everyDayAreaBox" -->
+			<div class="ui-sale" id="everyDayAreaBox">
+				<!-- 倒计时部分 -->
+				<div class="ui-sale-header">
+					<span class="ui-sale-title"></span>
+					<input type="hidden" id="hi_promSysno" value="12435">
+					<p data-time="26911" class="countDownEveryDay">
+						<span class="inblock text">还剩</span>
+						<span class="inblock ui-time-count-bg hour" id="hour">15</span>
+						<span class="inblock dot"></span>
+						<span class="inblock ui-time-count-bg minute" id="min">60</span>
+						<span class="inblock dot"></span>
+						<span class="inblock ui-time-count-bg second" id="sec">60</span>
+						<span class="inblock text">结束</span>
+					</p>
+					<div class="ui-arr">
+						<a href="##" id="arr-left" class="arr-left on"></a>
+						<a href="##" id="arr-right" class="arr-right"></a>
+					</div>
+				</div>
+				<!-- 小轮播图部分 -->
+				<div class="ui-sale-content">
+					<ul style="width: 2210px; margin-left:0px;" id="everyDayPromo">
+						<!-- 商品1 -->
+						<li>
+							<a href="##" class="promotionStats">
+								<div class="ui-item-img">
+									<img src="../img/index/loading.gif">
+								</div>
+								<div class="ui-item">
+									<span class="ui-item-title">不要着急正在加载</span>
+									<span class="ui-item-price">0</span>
+								</div>
+								<div class="ui-overlayBg"></div>
+								<div class="ui-overlay">
+									<p>
+										已出售<span>0</span>件
+									</p>
+								</div>
+							</a>
+						</li>
+						<!-- 商品2 -->
+						<li>
+							<a href="##" class="promotionStats">
+								<div class="ui-item-img">
+									<img src="../img/index/loading.gif">
+								</div>
+								<div class="ui-item">
+									<span class="ui-item-title">不要着急正在加载</span>
+									<span class="ui-item-price">0</span>
+								</div>
+								<div class="ui-overlayBg"></div>
+								<div class="ui-overlay">
+									<p>
+										已出售<span>0</span>件
+									</p>
+								</div>
+							</a>
+						</li>
+						<!-- 商品3 -->
+						<li>
+							<a href="##" class="promotionStats">
+								<div class="ui-item-img">
+									<img src="../img/index/loading.gif">
+								</div>
+								<div class="ui-item">
+									<span class="ui-item-title">不要着急正在加载</span>
+									<span class="ui-item-price">0</span>
+								</div>
+								<div class="ui-overlayBg"></div>
+								<div class="ui-overlay">
+									<p>
+										已出售<span>0</span>件
+									</p>
+								</div>
+							</a>
+						</li>
+						<!-- 商品4 -->
+						<li>
+							<a href="##" class="promotionStats">
+								<div class="ui-item-img">
+									<img src="../img/index/loading.gif">
+								</div>
+								<div class="ui-item">
+									<span class="ui-item-title">不要着急正在加载</span>
+									<span class="ui-item-price">0</span>
+								</div>
+								<div class="ui-overlayBg"></div>
+								<div class="ui-overlay">
+									<p>
+										已出售<span>0</span>件
+									</p>
+								</div>
+							</a>
+						</li>
+						<!-- 商品5 -->
+						<li>
+							<a href="##" class="promotionStats">
+								<div class="ui-item-img">
+									<img src="../img/index/loading.gif">
+								</div>
+								<div class="ui-item">
+									<span class="ui-item-title">不要着急正在加载</span>
+									<span class="ui-item-price">0</span>
+								</div>
+								<div class="ui-overlayBg"></div>
+								<div class="ui-overlay">
+									<p>
+										已出售<span>0</span>件
+									</p>
+								</div>
+							</a>
+						</li>
+						<!-- 商品6 -->
+						<li>
+							<a href="##" class="promotionStats">
+								<div class="ui-item-img">
+									<img src="../img/index/loading.gif">
+								</div>
+								<div class="ui-item">
+									<span class="ui-item-title">不要着急正在加载</span>
+									<span class="ui-item-price">0</span>
+								</div>
+								<div class="ui-overlayBg"></div>
+								<div class="ui-overlay">
+									<p>
+										已出售<span>0</span>件
+									</p>
+								</div>
+							</a>
+						</li>
+						<!-- 商品7 -->
+						<li>
+							<a href="##" class="promotionStats">
+								<div class="ui-item-img">
+									<img src="../img/index/loading.gif">
+								</div>
+								<div class="ui-item">
+									<span class="ui-item-title">不要着急正在加载</span>
+									<span class="ui-item-price">0</span>
+								</div>
+								<div class="ui-overlayBg"></div>
+								<div class="ui-overlay">
+									<p>
+										已出售<span>0</span>件
+									</p>
+								</div>
+							</a>
+						</li>
+						<!-- 商品8 -->
+						<li>
+							<a href="##" class="promotionStats">
+								<div class="ui-item-img">
+									<img src="../img/index/loading.gif">
+								</div>
+								<div class="ui-item">
+									<span class="ui-item-title">不要着急正在加载</span>
+									<span class="ui-item-price">0</span>
+								</div>
+								<div class="ui-overlayBg"></div>
+								<div class="ui-overlay">
+									<p>
+										已出售<span>0</span>件
+									</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 当日抢购，三张展示class="ui-ad-top" -->
+			<div class="ui-ad-top">
+				<div class="ui-ad-content">
+					<a href="##" class="big brandStats" style="position: relative;">
+						<img src="../img/index/ui-ad-top/1.jpg">
+						<img src="../img/index/ad_top2.png" style="width:auto; height:auto;z-index:2;position: absolute;border-radius:0; bottom:10px;top:undefined; right:10px">
+					</a>
+					<a href="##" class="big brandStats" style="position: relative;">
+						<img src="../img/index/ui-ad-top/2.jpg">
+						<img src="../img/index/ad_top2.png" style="width:auto; height:auto;z-index:2;position: absolute;border-radius:0; bottom:10px;top:undefined; right:10px">
+					</a>
+					<a href="##" class="big brandStats" style="position: relative;">
+						<img src="../img/index/ui-ad-top/3.jpg">
+						<img src="../img/index/ad_top2.png" style="width:auto; height:auto;z-index:2;position: absolute;border-radius:0; bottom:10px;top:undefined; right:10px">
+					</a>
+				</div>
+			</div>
+			<!-- 特惠专场 id="specialProduct" -->
+			<div id="specialProduct">
+				<div class="site-width act-pro">
+				<!-- 模块头部文字 -->
+					<div class="hotfloor">
+						<div class="site-floor-dt-fl">
+							<span class="inblock span1"></span>
+							<span class="inblock titleImg span3"></span>
+							<span class="inblock span1"></span>
+						</div>
+					</div>
+				<!-- 模块商品展示 -->
+					<!-- 商品1 -->
+					<!-- <div class="mb20 site-hot-item" >
+						<div class="site-hot-item-fl">
+							<a href="##" class="newstats">
+								<img src="../img/index/site-hot-item/g1.jpg">
+							</a>
+							<div class="soldoutPro item-soldout" style="display: none;"></div>
+							<img src="../img/index/ad_top2.png" style="width:auto; height:auto;z-index:2;position: absolute;border-radius:0; bottom:10px;top:undefined; right:10px">
+						</div>
+						<div class="site-hot-item-fr">
+							<h2 class="site-hot-row-two">
+								<a href="##" class="newstats">全球奶粉 底价庆生</a>
+							</h2>
+							<div class="site-hot-row-three">
+								<span class="product-words">
+                                    海外国内妈妈们一致好评的奶粉大牌，100元奶粉券等你来抢！美素佳儿3段用券后169，荷兰牛栏低至99元，新西兰爱他美110元疯抢，有机菁智3段到手295元，欧洲直邮奶粉满199力减40！年度实惠价，囤够省一年！
+								</span>
+							</div>
+							<div class="site-hot-row-four">
+								<div class="fl">
+									<div class="promo-price">
+										<div class="price">
+											<p style="font-size: 32px;" data-type="price">
+												<b style="font-size: 18px;font-weight: bold;vertical-align: 2px;margin-right: 3px">￥</b>
+												95
+												<b style="font-size: 16px;font-weight: bold;vertical-align: 3px;margin-left: 3px">起</b>
+											</p>
+										</div>
+									</div>
+								</div>
+								<a href="##" class="viewbtn">点击进入</a>
+								<div class="clear"></div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div> -->
+				</div>
+			</div>
+			<!-- 今日精选 id="hotProduct" -->
+			<div id="hotProduct">
+				<div class="site-width" id="hotProductCon">
+					<div class="site-floor-wrap">
+						<!-- 模块头部文字 -->
+							<div class="hotfloor">
+								<div class="site-floor-dt-fl">
+									<span class="inblock span1"></span>
+									<span class="inblock titleImg span2"></span>
+									<span class="inblock span1"></span>
+								</div>
+								<div class="clear"></div>
+							</div>
+						<!-- 模块商品展示 -->
+							<!-- 商品1 -->
+							<div class="mb20 site-hot-item">
+								<!-- 图片 -->
+								<div class="site-hot-item-fl">
+									<a href="##" class="newstats">
+										<img src="../img/index/site-hot-item2/1.jpg">
+									</a>
+									<div class="soldoutPro item-soldout" style="display: none;"></div>
+									<img src="../img/index/ad_top2.png" style="width:auto; height:auto;z-index:2;position: absolute;border-radius:0; bottom:10px;top:undefined; right:10px">
+								</div>
+								<!-- 文字 -->
+								<div class="site-hot-item-fr">
+									<div class="site-hot-row-one">
+										<div class="fl">
+											<span class="inblock" style="height: 45px;"></span>
+										</div>
+										<div class="clear"></div>
+									</div>
+									<h2 class="site-hot-row-two">
+										<a href="##" class="newstats">全球奶粉 底价庆生</a>
+									</h2>
+									<div class="site-hot-row-three">
+										<span class="product-words">
+		                                    海外国内妈妈们一致好评的奶粉大牌，100元奶粉券等你来抢！美素佳儿3段用券后169，荷兰牛栏低至99元，新西兰爱他美110元疯抢，有机菁智3段到手295元，欧洲直邮奶粉满199力减40！年度实惠价，囤够省一年！
+										</span>
+									</div>
+									<div class="fahuo-cang" style="height: 18px;">
+										<i></i>
+										母婴之家发货
+									</div>
+									<div class="site-hot-row-four">
+										<div class="fl">
+											<div class="promo-price">
+												<div class="price">
+													<p style="font-size: 32px;" data-type="price">
+														<b style="font-size: 18px;font-weight: bold;vertical-align: 2px;margin-right: 3px">￥</b>
+														95
+														<b style="font-size: 16px;font-weight: bold;vertical-align: 3px;margin-left: 3px">起</b>
+													</p>
+												</div>
+											</div>
+										</div>
+										<a href="##" class="viewbtn">点击进入</a>
+										<div class="clear"></div>
+									</div>
+								</div>
+								<!-- 清除 -->
+								<div class="clear"></div>
+							</div>
+					</div>
+				</div>
+			</div>
+			<!--品牌专栏 id="uiBrandAreaBox" -->
+			<div id="uiBrandAreaBox">
+				<div class="ui-brand">
+				<!-- 模块头部文字 -->
+					<div class="ui-title">
+						<span class="inblock span1"></span>
+						<span class="inblock titleImg span4"></span>
+						<span class="inblock span1"></span>
+					</div>
+					<div class="clear"></div>
+				<!-- 模块内容展示 -->
+					<div class="ui-brand-box">
+						<ul id="ui-brand-ul" style="width: 1090px;">
+							<li>
+								<!-- 大图 -->
+								<a href="##" class="big brandStats" style="position: relative;">
+									<img src="../img/index/ui-brand/b1d0.jpg">
+								</a>
+								<!-- 商标集合8个	 -->
+								<a href="##" class="small brandStats">
+									<img src="../img/index/ui-brand/b1d1.jpg">
+								</a>
+								<a href="##" class="small brandStats">
+									<img src="../img/index/ui-brand/b1d2.jpg">
+								</a>
+								<a href="##" class="small brandStats">
+									<img src="../img/index/ui-brand/b1d3.jpg">
+								</a>
+								<a href="##" class="small brandStats">
+									<img src="../img/index/ui-brand/b1d4.jpg">
+								</a>
+								<a href="##" class="small brandStats">
+									<img src="../img/index/ui-brand/b1d5.jpg">
+								</a>
+								<a href="##" class="small brandStats">
+									<img src="../img/index/ui-brand/b1d6.jpg">
+								</a>
+								<a href="##" class="small brandStats">
+									<img src="../img/index/ui-brand/b1d7.jpg">
+								</a>
+								<a href="##" class="small brandStats">
+									<img src="../img/index/ui-brand/b1d8.jpg">
+								</a>
+							</li>
+						</ul>
+						<span class="clear"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- —————————————————————————footer 部分———————————————————————————————-->		
+		<div class="mall-ensure">
+			<div class="mall-ensure-bd clearfix">
+				<div class="mall-ensure-bd-cen clearfix">
+					<ul class="clearfix">
+						<li>
+							<dl class="clearfix">
+								<dt class="clearfix">
+									<a href="##" style="color:#fff;">
+										<i class="sprite-icon icon-quality"></i>
+										<h2>品质</h2>
+									</a>
+								</dt>
+								<dd>全球化采购、正品保障</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="clearfix">
+								<dt class="clearfix">
+									<a href="##" style="color:#fff;">
+										<i class="sprite-icon icon-convenient"></i>
+										<h2>便捷</h2>
+									</a>
+								</dt>
+								<dd>一站式服务、送货上门</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="clearfix">
+								<dt class="clearfix">
+									<a href="##" style="color:#fff;">
+										<i class="sprite-icon icon-professional"></i>
+										<h2>专业</h2>
+									</a>
+								</dt>
+								<dd>顾问式客服、全年无休</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="clearfix">
+								<dt class="clearfix">
+									<a href="##" style="color:#fff;">
+										<i class="sprite-icon icon-sweet"></i>
+										<h2>贴心</h2>
+									</a>
+								</dt>
+								<dd>个性化导购、售后无忧</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 第二部分：导航部分 -->
+		<div class="mall-desc">
+			<div class="mall-desc-bd clearfix">
+				<div class="mall-desc-bd-cen clearfix">
+				<!-- 购物指南 -->
+					<dl class="h-guide">
+						<dt>
+							<i class="sprite-icon icon-guide"></i>
+							购物指南
+						</dt>
+						<dd>
+							<a href="##">购物流程</a>
+						</dd>
+						<dd>
+							<a href="##">常见问题</a>
+						</dd>
+						<dd>
+							<a href="##">优惠码(券)</a>
+						</dd>
+					</dl>
+				<!-- 支付方式 -->
+					<dl class="h-pay">
+						<dt>
+							<i class="sprite-icon icon-pay"></i>
+							支付方式
+						</dt>
+						<dd>
+							<a href="##">货到付款</a>
+						</dd>
+						<dd>
+							<a href="##">在线支付</a>
+						</dd>
+					</dl>
+				<!-- 配送方式 -->
+					<dl class="h-distribution">
+						<dt>
+							<i class="sprite-icon icon-distribution"></i>
+							配送方式
+						</dt>
+						<dd>
+							<a href="##">运费及时效</a>
+						</dd>
+						<dd>
+							<a href="##">品牌专场配送方式</a>
+						</dd>
+					</dl>
+				<!-- 售后服务 -->
+					<dl class="h-afterSales">
+						<dt>
+							<i class="sprite-icon icon-service"></i>
+							售后服务
+						</dt>
+						<dd>
+							<a href="##">退换货原则</a>
+						</dd>
+						<dd>
+							<a href="##">退换货流程</a>
+						</dd>
+						<dd>
+							<a href="##">退换货周期</a>
+						</dd>
+						<dd>
+							<a href="##">品牌专场售后政策</a>
+						</dd>
+					</dl>
+				<!-- 关于我们 -->
+					<dl class="h-aboutUs">
+						<dt>
+							<i class="sprite-icon icon-about"></i>
+							关于我们
+						</dt>
+						<dd>
+							<a href="##">企业理念</a>
+						</dd>
+						<dd>
+							<a href="##">网站合作</a>
+						</dd>
+						<dd>
+							<a href="##">人才招聘</a>
+						</dd>
+						<dd>
+							<a href="##">关于我们</a>
+						</dd>
+					</dl>
+				<!-- 联系我们 -->
+					<dl class="h-contactUs">
+						<dt>
+							<i class="sprite-icon icon-contactUs"></i>
+							联系我们
+						</dt>
+						<dd>
+							<a href="##">新浪微博</a>
+						</dd>
+						<dd>
+							<a href="##">联系客服</a>
+						</dd>
+						<dd>
+							<a href="##">我要投诉</a>
+						</dd>
+					</dl>
+				<!-- 微信二维码 -->
+					<div class="weixin-logo">
+						<div class="weixin-logo-img">
+							<img src="../img/index/weixin_code.jpg" title="母婴之家">
+						</div>
+						<div>
+							<span class="weixin-span">
+								<img src="../img/index/weixin_icon.jpg" title="母婴之家">
+							</span>
+							<span>扫一扫加微信</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 第三部分：页脚 -->
+		<div class="tfc_footer">
+			<div class="tfc_footer-bd">
+				<ul class="tfc_nav-footer clearfix">
+					<li>
+						<a href="##">首页</a>
+					</li>
+					|
+					<li>
+						<a href="##">公司简介</a>
+					</li>
+					|<li>
+						<a href="##">人才招聘</a>
+					</li>
+					|<li>
+						<a href="##">合作联系</a>
+					</li>
+					|<li>
+						<a href="##">企业理念</a>
+					</li>
+				</ul>
+				<div class="tfc_copyright">
+					<span>Copyright©2003 - 2016 muyingzhijia.com All Rights Reserved</span>
+					<span>沪ICP备09021709号</span>
+				</div>
+				<div style="padding:10px; text-align:center">
+					<a href="##" style="display: block; height: 38px; width: 100px; margin: 0 auto;">
+						<img src="../img/index/shanghai_industry.gif">
+					</a>
+					<a href="##" style=" margin-left:10px; display :inline-block;">
+						<span style="color: #939393;vertical-align:5px;margin-left:5px;">沪ICP备09021709号</span>
+						<img src="../img/index/ghs.png" style="display:inline-block">
+						<span style="color: #939393;vertical-align:5px;margin-left:5px;">沪公网安备 31010402000751号</span>
+					</a>
+				</div>
+			</div>
+		</div>
+<!-- ——————————屏幕左边广告—————————— -->
+	<div class="fixLeftImg" style="display: none;">
+		<div class="fixLeftTop">
+			<!-- 楼梯：特惠专场，今日精选 -->
+			<a href="##" class="area-hotProductCon"></a>
+			<a href="##" class="area-specialProductCon"></a>
+		</div>
+		<div class="fixLeftAd" style="display: block;">
+			<span class="fixLeftAd_close">×</span>
+			<a href="##">
+				<img src="../img/index/left_ad.png" alt="新客领浴盆">
+			</a>
+		</div>
+	</div>
+<!-- ——————————遮罩层广告———————————— -->
+	<div id="overlay" style="margin: 0px; padding: 0px; border: none; width: 100%; height: 100%; background: rgb(0, 0, 0); opacity: 0.8; z-index: 9999; position: fixed; top: 0px; left: 0px; display: block;">
+	</div>
+
+	<div id="easyDialogBox" style="margin: -330.5px 0px 0px -350px; padding: 0px; border: none; z-index: 10000; position: fixed; top: 50%; left: 50%; display: block;">
+		<div id="popup_container" style="display: block; margin: 0px; width: 700px; height: 700px; position: relative;">
+			<a href="##" class="first-big-img">
+				<img src="../img/index/zhezhao_ad.png">
+			</a>
+			<span class="close" style="right: 10px; top: 10px;">
+				<img src="../img/index/zhezhao_close.png">
+			</span>
+		</div>
+	</div>
+<!-- ——————————  script  ———————————— -->
+		<script type="text/javascript" src="../js/jquery.min.js" ></script>
+		<script type="text/javascript" src="../js/index.js" ></script>
+		<script type="text/javascript" src="../js/jquery.timers-1.2.js" ></script>
+		<script type="text/javascript" src="../js/jquery.cookie.js" ></script>
+		<script type="text/javascript">
+		
+		</script>
+	</body>
+</html>
